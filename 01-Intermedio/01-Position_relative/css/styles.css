@@ -1,0 +1,80 @@
+/* 
+  eje x -> Es Horizontalmente
+  eje z -> Es Verticalmente
+
+position: 
+
+  Flujo Enderizado:
+      por norma general los elementos se dibujan en la izquierda a derecha y de arriba abajo. el punto 0,0 de los elementos, por norma general, es la esquina superior izquierda
+
+  Espacio Recervado:
+      Es el espacio que tiene un elemento asignado en el navegador.
+
+  Elemento posicionado:
+      Esto significa que el elemento tiene la propiedad position con un valor distinto de "static", que es el valor que tiene esta propiedad por defecto.
+  
+  Stackin Context:
+      Contexto de apilamiento. Es el orden en el que se apilaran las cajas que se superponen, dentro del mismo contenedor
+ 
+
+    ////////////////////// static: ////////////////////// 
+      No esta posicionado es como eliminar la propiedad position
+      Es el valor que tiene por defecto un elemento, con este valor el elemento NO ESTA POSICIONADO y por lo cual no podremos moverlo
+
+    
+    ////////////////////// relative: //////////////////////
+      Se respeta las reglas de posicionamiento y se puede mover el elemento a donde se desee desde el punto de partida en donde se encuentre (recordar que se conserva el espacio y no podra ser tomado por otro y se movera libremente donde se indique)
+
+      tener en cuenta que si se tiene mas de un position relative por jerarquia el segundo elemento se sobrepondra por encima del primero por logica si se pinta un cuadro y luego se pinta otro este otro quedara encima
+
+      El elemento mantendra su posicion y medidas en el flujo de rendizado y mantendra su espacio reservado. si lo movemos lo hara usando su posicion en el html como punto de referencia
+
+
+    ////////////////////// z-index: ; //////////////////////
+      Sirve como para declarar jerarquia por lo general todos los elementos cuentan con el valor por defecto 0 sin embargo al declararlo como 1 tendra mas valor y el elemento con dicho valor se sobrepondra
+      
+      Tener en cuenta que el tema de jerarquia y posicionamientos no sirve con z-index, si se trata de contenedores padres con hijos
+
+      Si se requiere que el hijo se posicione por debajo del contenedor o elemento del padre 
+      se debe colocar al hijo como valor "-1"  z-index: -1 ; y al padre contenedor sin z-index:  
+
+      Nos permite mover el elemento en el contexto de apilamiento (eje z)
+      Si lo miramos en un plano 3D y tenemos 2 cajas una delante de otra la que se coloca adelante lo determina el z-index
+*/
+
+*{
+  position:sticky;
+}
+
+.caja{
+  height: 100px;
+  width: 100px;
+  
+}
+
+.caja1{ 
+  background-color: lightblue;
+  position:relative;
+  top: 40px;
+  left: 40px;
+}
+
+.caja2{
+  background-color: lightgreen;
+  position:relative;
+}
+
+.caja3{
+  background-color: lightcoral;
+  position:relative;
+  top: 40px;
+  left: 40px;  
+  z-index: 1;
+}
+
+.caja4{
+  background-color: lightslategray;
+  position:relative;
+}
+
+

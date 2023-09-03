@@ -1,0 +1,125 @@
+/* 
+    Display:
+        la propiedad Display nos sirve para cambiar el contexto de los elementos dentro del navegador
+        bloque: toma todo el ancho de la pagina
+        linea: toma de espacio solo lo que le corresponde al texto
+    Admite varios Valores:
+        none            :Hace que el elemento no se muestre, pero si existe y si carga.
+        block           :hace que el elemento sea de bloque
+        inline          :hace que el elemento sea de linea
+        inline-block    :hace que el elemento sea de linea pero admite medidas y margenes verticales
+*/
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #333;
+    color: #fff;
+}
+
+.texto1{
+    background-color: lightcoral;
+    display: none;
+    /* none :Hace que el elemento no se muestre, pero si existe y si carga. */
+}
+.texto2{
+    background-color: lightcoral;
+    display: inline;
+    /* inline :hace que el elemento sea de linea */
+}
+.texto3{
+    background-color: lightcoral;
+}
+
+.link1{
+    background-color: #fff;
+    display: block;
+    width: 100px;
+}
+
+.link2{
+    background-color: #fff;
+    display: inline-block;
+    margin-top: 50px;
+    width: 100px;
+
+}
+
+/* 
+    margin tiene limitaciones con los elementos de bloque pero con la propiedad display: inline-block; ya se podran aplicar
+
+    tambien se puede aplicar width con el atributo inline-block
+*/
+section{
+    display: flex;
+    width: 800px;
+}
+.img1{
+    width: 200px;
+    border: 1px solid white;
+    vertical-align: top;
+
+}
+.img2{
+    width: 200px;
+    border: 1px solid white;
+    vertical-align: top;
+}
+.ContImg1{
+    background-color: purple;
+    border: 1px solid white;
+}
+.ContImg2{
+    background-color: purple;
+    border: 1px solid white;
+}
+
+.ContImg3{
+    width: 200px;
+    border: 1px solid white;
+    vertical-align: top;
+    visibility: hidden;
+}
+
+/* 
+    visibility: hidden; 
+    Sirve para ocultar en el navegador un elemento pero que sea visible el hueco
+*/
+
+/* 
+    Una solucion para quitar el espacio "INFERIOR" que genera la imagen y se acople al div que lo contiene es usando la propiedad "vertical-align: top;" pero toca en todas las imagenes
+
+*/
+
+.Enlace{
+    background-color: greenyellow;
+    width: 25%;
+}
+
+nav{
+    display: flex;
+}
+
+/* 
+    El atributo Display: Flex; Dentro de la caja section ordena a que todas las imagenes que se encuentran ocupen todo el espacio de manera horizontal para que no deje huecos.
+*/
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+/* 
+    Cambio Automatico del display
+    Al poner la propiedad display:flex 
+        en el nav lo que hace es que de manera automatica convierte los elementos <a> quue eran elementos de linea en elementos de bloque y se pueden trabajar como elementos de bloque el tamaño y demas cosas y los acomoda de manera automatica 
+*/
+
+@media only screen and (max-width:600px){
+    nav{
+        flex-direction: column;
+    }
+}
+
+/* 
+    El codigo anterior indica que cuando la pantalla del navegador se encuentre de 0 a 600px de ancho
+    Cambie automaticamente los elementos de nav de lista horizontal a columnas verticales 
+    
+    Con el flex-direction
+*/

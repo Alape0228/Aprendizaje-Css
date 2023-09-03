@@ -1,0 +1,63 @@
+/* 
+    HEIGHT: 
+    % ->
+        Cuando estamos dentro de un contenedor este tiene que tener un alto declarado, si no no podra calcular el porcentaje. si le aplica una medida con porcentaje se sustituira automaticamente por auto
+        
+    auto ->
+        Cuando usamos auto el alto lo calculara el navegador en base al contenido del elemento
+
+    NOTA:
+        Height es una propiedad que teneis que usar con cuidado. si no es necesario establecer un alto, dejad que el contenido sea el que decida el alto del elemento  
+*/
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #333;
+    color: black;
+    margin: 0;
+    
+}
+.contenedor1{
+    background-color: lightblue;
+    width: 50%;
+    /* height: auto; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding-bottom: 100px;
+}
+
+/* 
+    El height; que no es definido en pixeles o una medida exacta no se expandira con % y tomara automaticamente el alto teniendo en cuenta el contenido
+    Pero si se queire que sea mas alto se aconseja usar padding: expandiendo el espacio interno
+    Esto con el fin de que si se añade mas contenido automaticamente el alto aumentara y el espacio en blanco se consevara
+*/
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.contenedor2{
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    margin-bottom: 100px;
+}
+
+.caja1{
+    background-color: black;
+    position: relative;
+    width: 50%;
+    height: 50%;
+}
+
+/* 
+    Si se pone "position: absolute;"-fixed con el height:50% no tomara el la mitad del contenedor si no de la pantalla completa como tal.
+    con position: relative y position:sticky si funciona con el %
+*/
+
+
+.cabecera{
+    background-color: aqua;
+    text-align: center;
+}

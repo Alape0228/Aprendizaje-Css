@@ -1,0 +1,139 @@
+/* 
+  PseudoElementos:
+    Es un elemento que no es un elemento por que no hace parte del Dom pero podemos hacer efectos visuales como el outline, sin embargo no afecta al dom
+
+    No funcionan con inline pero si (inline-Block, Block)
+
+    Los pseudoelementos que requieran de la etiqueta content no forman parte del dom
+
+
+    :hover     
+    :link    
+    :visited       
+    :active     
+    :focus 
+    :lang() = casi ni se usa para lenguaje
+
+    transition:
+      Es una propiedad que nos permite cambiar la velocidad en las que ocurren las transiciones especialmente en el hover
+*/
+
+.contenedor{
+  height: 200px;
+  width: 200px;
+  background-color: lightcoral;
+  border: 3px solid black;
+  transition: background-color 3s, height 2s , width 2s , border 2s;
+  /* transition: all 1s; haria que todas las transiciones en 1 seg */
+}
+.contenedor:hover{
+  background-color: #000;
+  color: #fff;
+  height: 400px;
+  width: 400px;
+  border: 3px solid red;
+}
+.boton1{
+  padding: 20px 50px;
+  background-color: aquamarine;
+  color: #000;
+}
+.boton1:hover{
+  background-color: rgb(12, 94, 66);
+  color: #fff;
+}
+/* 
+  :hover
+    Funciona en cualquier Elemento, Excepto en los pseudoelementos
+    Sirve para modificar el estilo a donde el puntero del mouse haga presencia 
+    Se aplica generalmente a los nav enlaces, botones  
+*/
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.enlace1{
+  padding: 20px 50px;
+  background-color: #000;
+  color: slateblue;
+}
+.enlace1:link{
+  color: red;
+}
+/* 
+  :link  
+    Si el link no es visitado asignar los siguientes estilos
+    Cambia un link que todavia no visitamos
+    solo se vera rojo cuando nunca, NUNCA pero NUNCA!!! lo hayamos visitado 
+    de resto por defecto se vera morado
+*/
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.enlace2{
+  padding: 20px 50px;
+  color: #000;
+  background-color: slateblue;
+}
+.enlace2:visited{
+  background-color: lightslategray;
+  color: violet;
+}
+/* 
+  :visited  
+    Cambia el Estilo a los links que ya estan visitados
+    Entonces si el usuario da click algun link este cambia de color a violeta
+    se puede cambiar el tamaño el background 
+*/
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.contenedor2{
+  background-color: lightcoral;
+  width: 200px;
+  height: 200px;
+  transition: all .9s;
+}
+.contenedor2:active{
+  background-color: lightseagreen;
+  width: 400px;
+  height: 400px;
+}
+/*
+  :active 
+    Sirve para generar efecto solo en el momento en que clickeamos sostenidamente
+    sobre una caja o algun elemento damos click y se genera el efecto o estilo
+    sin embargo si soltamos el click se quitara el efecto
+*/
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.contenedor2{
+  background-color: lightcoral;
+  width: 200px;
+  height: 200px;
+  transition: all .9s;
+}
+.contenedor2:active{
+  background-color: lightseagreen;
+  width: 400px;
+  height: 400px;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.input1{
+  background-color: moccasin;
+  transition: .4s;
+}
+.input1:focus{
+  background-color: lightslategray;
+  padding: 15px;
+}
+/*
+  :focus 
+    Se Aplica mas que todo a los inputs
+    Se aplica el efecto cuando le damos click y lo tenemos seleccionado o enfocado 
+*/
+
+
+

@@ -1,0 +1,156 @@
+/* 
+PROPIEDADES DE LOS LOS ITEMS
+
+    align-self: ;
+        *   Propiedad al elemento o caja hijo para que se alinie a gusto flex-end, flex-start, center de arriba a abajo
+
+    margin:
+        *   Funciona el margin para centrar elementos hijos con margin-left: auto; margin-right: auto o margin:auto teniendo en cuenta cuando es solo (1) un contenedor
+    
+    flex-grow: ;
+        *   Sirve y consiste en proporcionar el espacio no ocupado disponible a los elementos hijos o cajas, si al crear los elementos hijos o cajas sobra un espacio, este espacio sera ocupado por los hijos de manera proporcional si se toma como valor 1
+        *   Recordar que a donde pongamos esa propiedad es a donde le vamos a dar el espacio disponible si solo se lo colocamos a un hijo ese hijo poseera todo el espacio disponible
+        
+    flex-basis: ;
+        * Funciona como un width, donde sirve para declarar ancho a una caja hija pero tiene mas fuerza o poder que width
+
+    flex-shrink: ;
+        * Si el espacio que tienen declarado es de 400px de ancho, las cajas intentaran llegar a ese espacio como resultado final, pero mientras que llegan a ese espacio el contenedor hijo que tenga la propiedad flex-shrink: (Sede regala o entrega espacio)
+        * El elemento hijo con la propiedad es el ultimo objeto que ocuapra el espacio declarado
+
+    flex: ;
+        * Agrupa a todas las anteriores (flex-grow, flex-shrink, flex-basis)
+        * El primer valor es siempre necesario
+
+    order: ;
+        * Es como el z-index pero en el eje en que apunta el main exis (izquierda a derecha)
+        * Si no se tiene la propiedad establecida tiene como valor 0
+        * al definir un contenedor hijo o elemento con un valor mayor a 0 se pondra de primeras de (derecha a izquierda)
+    
+
+*/
+.container{
+    text-align: center;
+}
+
+/* ////////////////////////// align-self: center,flex-end,flex-start,stretch,baseline; ////////////////////////// */
+.contenedor1{
+    display: flex;
+    border: 3px solid lightslategray;
+    height: 400px;
+}
+.contenedor1_flex{
+    height: 100px;
+    width: 100px;
+    background-color: darkseagreen;
+    outline: solid 2px black;
+}
+.contenedor1_flex1{
+    background-color: orange;
+    align-self: center;
+}
+.contenedor1_flex6{
+    background-color: violet;
+    align-self: flex-end;
+}
+
+
+/* //////////////////////////////// margin: //////////////////////////////// */
+.contenedor2{
+    display: flex;
+    border: 3px solid lightslategray;
+    height: 400px;
+}
+.contenedor2_flex1{
+    height: 100px;
+    width: 100px;
+    outline: solid 2px black;
+    background-color: orange;
+    margin: auto;
+}
+
+
+/* //////////////////////////////// flex-grow: ; //////////////////////////////// */
+.contenedor3{
+    display: flex;
+    border: 3px solid lightslategray;
+    height: 400px;
+}
+.contenedor3_flex{
+    height: 100px;
+    width: 100px;
+    background-color: darkseagreen;
+    outline: solid 2px black;
+}
+.contenedor3_flex1{background-color: orange; flex-grow: 1;}
+.contenedor3_flex6{background-color: violet; flex-grow: 2;}
+
+
+/* //////////////////////////////// flex-basis: ; //////////////////////////////// */
+.contenedor4{
+    display: flex;
+    border: 3px solid lightslategray;
+    height: 400px;
+}
+.contenedor4_flex{
+    height: 100px;
+    width: 100px;
+    background-color: darkseagreen;
+    outline: solid 2px black;
+    margin: 5px;
+}
+.contenedor4_flex1{
+    background-color: orange;
+    flex-basis: 800px;
+}
+.contenedor4_flex6{background-color: violet;}
+
+
+/* //////////////////////////////// flex-shrink: ; //////////////////////////////// */
+.contenedor5{
+    display: flex;
+    border: 3px solid lightslategray;
+    height: 400px;
+}
+.contenedor5_flex{
+    height: 100px;
+    width: 200px;
+    background-color: darkseagreen;
+    outline: solid 2px black;
+    flex-grow: 1;
+}
+.contenedor5_flex1{
+    background-color: orange;
+    flex-shrink: 2;
+}
+.contenedor5_flex6{
+    background-color: violet;
+    flex-shrink: 0;
+}
+
+
+/* //////////////////////////////// flex: ; // order: ; //////////////////////////////// */
+.contenedor6{
+    display: flex;
+    border: 3px solid lightslategray;
+    height: 400px;
+}
+.contenedor6_flex{
+    height: 100px;
+    width: 100px;
+    background-color: darkseagreen;
+    outline: solid 2px black;
+    flex: 1;
+}
+.contenedor6_flex1{
+    background-color: orange;
+    order: 1;
+}
+.contenedor6_flex6{background-color: violet;}
+
+
+
+/* 
+flex: ;
+
+order: ; */

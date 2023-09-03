@@ -1,0 +1,98 @@
+/* 
+  PseudoElementos:
+    Es un elemento que no es un elemento por que no hace parte del Dom pero podemos hacer efectos visuales como el outline, sin embargo no afecta al dom
+
+    No funcionan con inline pero si (inline-Block, Block)
+
+    Los pseudoelementos que requieran de la etiqueta content no forman parte del dom
+
+
+    ::first-line      |   Block
+    ::first-letter    |   Block
+    ::selection       |   
+    ::placeholder     |   
+    ::after (Despues) |   Hijos - Content (Necesario) - Inline
+    ::before (antes)  |   Hijos - Content (Necesario) - Inline
+*/
+
+.texto1::first-line{
+    color: red;
+    font-size: 2em;
+    font-weight: 600;
+}
+/* 
+  ::first-line 
+    Se refiere a la primera linea
+    Se aplica efectos unicamente a la primera linea sin importar el tamaño o el responsive
+*/
+
+
+.texto2::first-letter{
+  color: red;
+  font-size: 2em;
+  font-weight: 600;
+}
+/* 
+::first-letter
+  Se refiere a la primera Letra
+  Se aplica efectos unicamente a la primera Letra sin importar el tamaño o el responsive
+*/
+
+
+.texto3::selection{
+  background-color: black;
+  color: #fff;
+}
+/* 
+::selection
+  Se refiere al texto seleccionado por el mouse
+  Se aplica efectos unicamente al texto seleccionado por el mouse
+*/
+
+
+.form1 {
+  margin: 50px auto;
+  background-color: lightslategray;
+  width: 50%;
+  padding: 30px;
+  text-align: center;
+}
+.input1{
+  width: 100%;
+  height: 40px;
+}
+.input1::placeholder{
+  color: red;
+  text-shadow: 10px 0 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+/* 
+::placeholder
+  Se refiere al placeholder (El texto por defecto en los inputs ya declarados)
+  Se aplica efectos unicamente a los placeholder
+*/
+
+
+.texto4::before{
+  content: "Texto agregado por ::before Pero no puedo ser seleccionado ";
+  background-color: #000;
+  color: #fff;
+}
+/* 
+::before (Antes)
+  Sirve para agregar texto antes del elemento seleccionado
+  Se aplica efectos unicamente al texto creado que ira atras 
+*/
+ 
+ 
+.texto4::after{
+  content: "Texto agregado por ::after Pero no puedo ser seleccionado ";
+  background-color: lightcoral;
+  color: rgb(83, 94, 75);
+}
+/* 
+::after (Despues)
+  Sirve para agregar texto despues del elemento seleccionado
+  Se aplica efectos unicamente al texto creado que ira adelante 
+*/

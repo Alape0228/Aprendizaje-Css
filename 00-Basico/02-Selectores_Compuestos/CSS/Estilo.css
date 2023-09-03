@@ -1,0 +1,58 @@
+/* 
+    2- Selectores Compuestos
+        2.1-Selectores agrupados            : se agrupan los selectores por ","
+        2.2-selectores combinadores         
+            Selector descendiente           
+            Selector de hermano siguiente   : +
+            Selector de todos los hermanos siguientes : ~ (alt gr + "+")
+        2.3-pseudoclases - pseudoelementos
+*/
+
+/* .texto{
+    background-color: aqua;
+}
+.texto2{
+    background-color: aqua;
+}
+.texto3{
+    background-color: aqua;
+}
+.texto4{
+    background-color: aqua;
+} */
+
+
+/* .texto, 
+.texto2, 
+.texto3, 
+.texto4 {
+    background-color: aqua; */
+/* 2 Manera de agrupar */
+
+.texto, .texto2, .texto3, .texto4 {
+    background-color: aqua;
+} 
+/* 1 Manera de agrupar */
+
+div .title{
+    background-color:blueviolet;
+}
+/* Se llama la clase independiente de que ya este repetida la clase se encuentra dentro de otro selector  */
+
+/* si un elemento esta dentro de otro elemento es hijo el elemento que esta dentro */
+
+.texto3 + .title{
+    background-color:yellow;
+}
+
+/* hay dos clases con el nombre title pero con la funcion "(.texto3 + .title)" estoy llamando al hermano siguiente de la clase texto3 que es title o que puede ser h2  */
+
+.texto5 ~ p{
+    background-color:darkslateblue;
+}
+/* se esta llamando a los elementos p que hay como hermanos de la clase texto5 pero se debe tener en cuenta que la clase texto5 no fue tomada es solo de esa en adelante, pero si revisas en el navegador no esta tomando los titulos solo los p */
+
+.contenedor > p {
+    background-color: chartreuse;
+}
+/* Se esta llamando a los hijos directos de la casle contenedor que es el div la clase p del medio no se toma debido a que esta dentro de otro div asi que ya no seria hijo si no nieto */

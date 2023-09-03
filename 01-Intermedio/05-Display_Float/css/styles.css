@@ -1,0 +1,41 @@
+/* 
+  Display:
+    display: inline-block
+      Le podemos dar un ancho y un alto
+      permite poner un elemento al lado de otro
+
+    display:inline;
+      Sirve unicamente mas que todo para texto
+
+    display:grid;
+      Se comportan como bloques
+
+    
+
+    
+*/
+
+/* 
+  Float
+    El Contenedor no necesita o no requiere que se le coloque la propiedad float
+    El efecto se consigue con mucho texto y una imagen pequeña para que sea vea asi
+    y el texto o contenido agregado no debe estar dentro de un contenedor p o algo por el estilo
+    
+*/
+
+.contenedor{
+  background-color: lightslategray;
+  margin-top: 50px;
+  margin: auto;
+  border: 5px solid red;
+  width: 75%;
+}
+
+.img{
+  width: 200px;
+  height: 300px;
+  float: left;
+  margin: 15px;
+}
+
+

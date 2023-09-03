@@ -1,0 +1,83 @@
+/* 
+    Box-shadow
+        La propiedad se creo para añadir efectos de sombras a nuestra caja
+    
+    En esencia lo que hace es crear un clon de la caja respetando la forma de su box-model 
+    (ancho, alto, redondez)
+    
+    la sintaxis de box-shadow se puede escribir de distintas formas segun lo que queramos conseguir.
+    Los valores que le podemos poner son:
+
+        offset-x        Desplazamiento en x (obligatorio)
+        offset-y        Desplazamiento en y (obligatorio)
+        blur-radius     Desenfoque de la sombra
+        spread-radius   Expansion de la sombra
+        color           El color de la sombra, si no lo especificamos lo heredera del elmento al que pertenece
+        inset           Determina si la sombra sera inferior o exterior
+
+*/
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #333;
+    color: #fff;
+}
+
+.caja{
+    background-color: aqua;
+    width: 200px;
+    padding: 50px;
+    color: red;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    box-shadow: 5px 5px 50px 50px greenyellow;
+    /* el efecto de sombra indico que 5px se fuera hacia la derecha y 5px bajara  */
+    /* Desenfoque de la sombra */
+    /* Expansion de la sombra */
+    /* El color de la sombra con el color de la letra a menos de que uno se la configure manualmente  */
+}
+
+.caja2{
+    background-color: aqua;
+    width: 200px;
+    padding: 50px;
+    color: red;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    box-shadow: 0px 30px 10px -20px red;
+    /* el efecto de sombra indico que 0px ira hacia la derecha bajara y 30px se bajara o se mostrara en la parte inferior */
+    /* Desenfoque de la sombra */
+    /* Expansion de la sombra */
+    /* El color de la sombra con el color de la letra a menos de que uno se la configure manualmente  */
+}
+
+.caja3{
+    background-color: aqua;
+    width: 200px;
+    padding: 50px;
+    color: red;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    box-shadow:inset 10px 10px 40px 0px green;
+    /* el efecto de sombra interna */
+}
+
+.caja4{
+    background-color: aqua;
+    width: 200px;
+    padding: 50px;
+    color: red;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px yellow, 10px 10px blue ;
+    /* el efecto de sombra interna */
+
+}

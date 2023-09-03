@@ -1,0 +1,104 @@
+body{
+    background-color: #333;
+    color: #fff;
+}
+
+.bloque{
+    background-color: purple;
+    width: 100px;
+    height: 100px;
+}
+/* width    : Ancho pero del bloque del elemento como tal*/
+/* height   : Alto pero del bloque del elemento como tal*/
+
+.linea{
+    background-color: lightcoral;
+    color: inherit;
+    width: 200px;
+    height: 200px;
+}
+
+.titulo{
+    background-color: burlywood;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* A los elementos de linea no les afecta el width y height */
+/* margin top y margin buttom no funciona tampoco, solo el de los lados */
+/* El tamaño de los elementos de linea lo determina su contenido  */
+/* con el atributo inherit forzamos que se tome en cuenta la herencia de su padre  */
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* 
+    Margin:
+        Es la propiedad que nos permite generar espacio entre elementos
+        Es un shorthond (propiedad abreviada) que controla los 4 lados posibles a los que dar margenes 
+
+    margin-top      : Margen Superior
+    margin-right    : Margen Derecha
+    margin-bottom   : Margen Inferior
+    margin-left     : Margen Izquierda
+
+    Admite hasta 4 valores que van en el orden de las agujas del reloj
+
+    4 valores   : margin: top right bottom left
+        le aplica margen indiferente a los 4 lados
+    3 Valores   : margin: top left/right bottom
+        le aplica margen diferente al top y al bottom// left y rigth compartirian el mismo lado
+    2 Valores   : margin: top/bottom left/right
+        le aplica la misma margen al top/bottom y una distinta a left/right 
+    1 Valor     : margin: top/right/bottom/left
+        le aplica la misma margen a todos los lados
+
+*/
+.bloque{
+    margin: 100px;
+}
+
+.bloque1{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    margin: 100px 70px;
+    
+}
+.bloque2{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    margin: 100px 70px 40px;
+    
+}
+.bloque3{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    margin: 100px 70px 40px 10px;
+    
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.bloque4{
+    background-color:aqua;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+}
+
+/* 
+    Existen Margenes automaticas
+
+    margin-right: auto;
+        Lo que hace es que calcula toda la margen de la derecha y lo somete todo a la izquierda
+    margin-left: auto;
+        Lo que hace es que calcula toda la margen de la izquierda y lo somete todo a la derecha
+    margin-right: auto;
+        Lo que hace es que calcula toda la margen de la derecha y lo somete todo a la izquierda
+    margin-right: auto;
+        Lo que hace es que calcula toda la margen de la derecha y lo somete todo a la izquierda
+
+
+*/

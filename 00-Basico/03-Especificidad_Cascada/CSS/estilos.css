@@ -1,0 +1,82 @@
+/* 
+    COMO FUNCIONA CSS?
+        Especificidad   : Establece como de especifico es un selector para saber que estilo aplicar
+        El calculo se realiza con la siguiente formula:
+        
+        Cascada     : Funciona siempre que la especificidad sobre el elemento sea la misma
+        Herencia    : 
+*/
+/* 
+    Etiquetas y pseudoelementos         : 001
+    Clases, atributos y pseudoclases    :010
+    ids                                 :100
+    Estilos en linea                    :1000
+    !important                          :GANA A TODO
+
+    Escifilidad del selector    : (0,0,0)
+
+    Tratar de manejar clases para que la cascada no se vea afectada
+    Recordar que el codigo lo toma de arriba a abajo
+*/
+/* ///////////////////////////////////////////////////////////////// */
+/* 1 */
+h1.titulo#titulo {
+    background-color: orange;
+}   
+/* Escifilidad del selector    : (1,1,1) */
+/* Escifilidad del selector    : (id,Clase,Etiqueta) */
+
+/* ///////////////////////////////////////////////////////////////// */
+/* 2 */
+#titulo.titulo{
+    background-color: darkmagenta;
+}
+/* Escifilidad del selector    : (1,1,0) */
+/* Escifilidad del selector    : (id,clase,0) */
+
+/* ///////////////////////////////////////////////////////////////// */
+/* 3 */
+h1#titulo {
+    background-color: teal;
+}
+/* Escifilidad del selector    : (1,0,1) */
+/* Escifilidad del selector    : (id,0,Etiqueta) */
+
+/* ///////////////////////////////////////////////////////////////// */
+/* 4 */
+#titulo {
+    background-color: green;
+}
+/* Escifilidad del selector    : (1,0,0) */
+/* Escifilidad del selector    : (id,0,0) */
+
+/* ///////////////////////////////////////////////////////////////// */
+/* 5 */
+h1.titulo {
+    background-color: yellow;
+}
+/* Escifilidad del selector    : (0,1,1) */
+/* Escifilidad del selector    : (0,Clase,Etiqueta) */
+
+/* ///////////////////////////////////////////////////////////////// */
+/* 6 */
+.titulo {
+    background-color: blue;
+}
+/* Escifilidad del selector    : (0,1,0) */
+/* Escifilidad del selector    : (0,Clase,0) */
+
+/* ///////////////////////////////////////////////////////////////// */
+/* 7 */
+h1 {
+    background-color: red;
+}
+/* Escifilidad del selector    : (0,0,1) */
+/* Escifilidad del selector    : (0,0,Etiqueta) */
+
+
+
+
+
+
+

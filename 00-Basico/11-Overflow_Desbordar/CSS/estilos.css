@@ -1,0 +1,73 @@
+/* 
+    Decimos que un contenido se desborda cuando la caja es mas pequeña que el contenedor
+
+    Overflow:
+        Es la propiedad que controla que debe hacer la caja cuando su contenido se desborda del contenedor.
+        Es un shorthand que engloba overflow-x y overflow-y 
+    
+    Tiene 4 posibles Valores:
+        Visible : Es el valor por defecto
+        hidden  : El contenido que se desborde no se vera. asi aplicamos esta propiedad en un solo eje,
+                  el otro se pondra automaticamente en el valor scroll.
+        scroll  : Apareceran barras de scroll en el eje asignado (x, y o ambos)
+        auto    : Apareceran barras de scroll en el de que hicieran falta.
+
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+}
+.bloque{
+    background-color: purple;
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    margin-right: auto;
+    border-radius: 50px;
+    overflow: hidden;
+}
+/* hidden : Respeta las medidas de la caja para que no se salga el contenido sin embargo  el contenido que se desborda se oculta y no se muestra */
+
+.blq1, .blq2{
+    padding: 15px;
+    background-color: lightcoral;
+}
+/* Se esta desbordando el contenido de los dos div que hay dentro del div padre   */
+
+.texto{
+    /* width: 300px; */
+    margin: 0;
+    /* Resetear o quitar la margen de los textos */
+}
+
+
+.bloque2{
+    background-color: greenyellow;
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow-y: scroll;
+}
+/* Genera un scroll asi el texto o el contenido no se desborde */
+
+.bloque3{
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-bottom: 20px;    
+    overflow: auto;
+}
+/* Genera un scroll en modo automatico en el caso de que se desborde el texto o el contenido*/
+/* Lo mas recomendado es usar el Overflow solo */
+

@@ -1,0 +1,76 @@
+/* 
+    Las medidas en CSS se pueden agrupar en 2 grupos, absolutas y relativas.
+
+    las medidas adsolutas NO CAMBIAN y siempre mantendran su tamaño independientemente del dispositivo o la interaccion del usuario.
+
+    Lo mas usada es px (pixeles) Cuya medida es 1/96 de 1 in, pero existen otras como:
+        cm  (centimentros)          -> 1 cm = 96px/2,54
+        mm  (milimetros)            -> 1 mm = 1/10 de 1 cm
+        Q   (cuarto de milimetro)   -> 1 Q  = 1/40 de 1 cm
+        in  (inches, pulgadas)      -> 1 in = 2,54 cm = 96px
+        pc  (picas)                 -> 1 pc = 1/16 de 1in 
+        pt  (puntos)                -> 1 pt = 1/72 de 1in
+
+    Las medidas relativas SIEMPRE dependen de un contexto son las que se recomienda utilizar en la gran mayoria de ocaciones porque nos va a permitir que todos los elementos escalen proporcionalmente 
+
+    Los mas usados son em, rem, %, vw, vh, vmin, y vmax aunque tenemos otras como:
+        ex -> Altura x de la fuente del elemento
+        ch -> La medida del ancho del glifo "0" de la letra del elemento.
+        Lh -> Altura de la linea del elemento.
+*/
+
+/* 
+    MEDIDA EM y REM
+
+    rem ->
+        Corresponde a la medida de la "m" de la raiz del documento (html)
+        16px = 1rem
+    
+    em ->
+        Corresponde a la medida de la "m" del contexto donde nos encontremos
+
+    El estandar del tamaño de fuente por defecto en la raiz del documento es 16px, y NO ES RECOMENDABLE MODIFICARLO
+    
+    NOTA: tanto "em" como "rem" se calcula en base a la propiedad font-size (tamaño de fuente)
+
+*/
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #333;
+    color: #fff;
+    font-size: 10px;
+}
+
+.titulo1{
+    font-size: 10em;
+}
+
+/* 
+    para aplicar "em" se debe tener en cuenta el contexto o el contenedor en el cual se encuentra el elemento 
+    Ejemplo:
+    la clase .titulo que es la etiqueta h1 esta dentro del contenedor o contexto de body
+    si a body le asignamos "font-size: 10px;" al colocar "font-size: 10em;" significa 100px
+    Esto debido a que tiene en cuenta el contexto o contenedor y lo que hace es multiplicar las veces necesarias el valor del contenedor
+*/
+
+.titulo2{
+    font-size: 4rem;
+}
+
+/* 
+    En HTML el tamaño por defecto del texto es 16px y al usar la propiedad "font-size: 2rem;" se multiplica es el valor de 16px por las veces que se requiera 4rem= 64px
+
+    SE RECOMIENDA QUE SIEMPRE SE USE REM
+*/
+
+.link{
+    background-color: lightcoral;
+    color: #333;
+    padding: 16px 32px;
+    border-radius: 8px;
+
+}

@@ -1,0 +1,98 @@
+/* 
+Justify-Content;
+    *   Alinear de manera Horizontal
+    *   Sirve para centrar los elementos hijos del contenedor
+    *   No usar Margin para acomodar los Elementos Hijos
+
+    justify-content: center;
+        *   Centra el contenido a la mitad sin dejar algun tipo de espacio entre los hijos
+
+    justify-content: space-between;
+        *   Centra el contenido pero administra el espacio con el fin de separar 
+            los elementos hijos uno de los otros a los lados pero en sus bordes finales de la izquierda y la derecha los ocupa 
+        *   Es como dejar la mayor cantidad de espacio entre las cajas a la 
+            misma distancia lo que mas se pueda
+        *   No deja margen a los costados
+        
+    justify-content: space-around;
+        *   Centra el contenido pero administra el espacio con el fin de separar 
+            los elementos hijos uno de los otros a los lados
+        *   Este Tiene la facilidad de poder trabajar mejor con 
+            margin individualmente hijos
+        *   Deja la mitad de la margen a los costados
+
+    justify-content: space-evenly;
+        *   Exactamente igual que las propiedaes anteriores pero esta ves 
+        *   Deja la misma margen a todos los costados de los lados
+
+
+*/
+.container{
+    text-align: center;
+}
+
+/* //////////////////////////////// flex-direction: row; //////////////////////////////// */
+.contenedor1{
+    display: flex;
+    justify-content: center;
+    border: 3px solid lightslategray;
+}
+.contenedor1_flex{
+    height: 100px;
+    width: 100px;
+    background-color: darkseagreen;
+    outline: solid 2px black;
+}
+.contenedor1_flex1{background-color: orange;}
+.contenedor1_flex6{background-color: violet;}
+
+
+/* //////////////////////////////// flex-direction: row-reverse; //////////////////////////////// */
+.contenedor2{
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid lightslategray;
+}
+.contenedor2_flex{
+    height: 100px;
+    width: 100px;
+    background-color: darkseagreen;
+    outline: solid 2px black;
+}
+.contenedor2_flex1{background-color: orange;}
+.contenedor2_flex6{background-color: violet;}
+
+
+/* //////////////////////////////// flex-direction: column; //////////////////////////////// */
+.contenedor3{
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid lightslategray;
+}
+.contenedor3_flex{
+    height: 100px;
+    width: 100px;
+    background-color: darkseagreen;
+    outline: solid 2px black;
+}
+.contenedor3_flex1{background-color: orange;}
+.contenedor3_flex6{background-color: violet;}
+
+
+/* //////////////////////////////// flex-direction: row; //////////////////////////////// */
+.contenedor4{
+    display: flex;
+    justify-content: space-evenly;
+    border: 3px solid lightslategray;
+}
+.contenedor4_flex{
+    height: 100px;
+    width: 100px;
+    background-color: darkseagreen;
+    outline: solid 2px black;
+}
+.contenedor4_flex1{background-color: orange;}
+.contenedor4_flex6{background-color: violet;}
+
+
+/* //////////////////////////////// flex-direction: row; //////////////////////////////// */

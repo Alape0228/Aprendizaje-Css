@@ -1,0 +1,27 @@
+div {
+    width: 45%;
+    display: inline-block;
+    padding: 10px;
+    background-color: #ddd;
+}
+
+h1{
+    font-size: 35px;
+}
+
+.contenedor2{
+    background-color: #bbb;
+}
+
+
+
+/* Cuando la pantalla alcance resoluciones menores de 800pixeles */
+
+@media only screen and (max-width: 800px) {
+
+div{
+    display: block;
+    width: 100%;
+}
+
+}

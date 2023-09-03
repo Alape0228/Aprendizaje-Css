@@ -1,0 +1,31 @@
+/*  
+
+*/
+.contenedor{
+    background-color: lightcoral;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.contenedor1:hover{cursor:alias;}
+.contenedor2:hover{cursor:copy;}
+.contenedor3:hover{cursor:crosshair;}
+.contenedor4:hover{cursor:help;}
+.contenedor5:hover{cursor:move;}
+.contenedor6:hover{cursor:none;}
+.contenedor7:hover{cursor:text;}
+.contenedor8:hover{cursor:progress;}
+.contenedor9:hover{cursor:pointer;}
+.contenedor10:hover{cursor:grab;}
+.contenedor11:hover{cursor:grabbing;}
+.contenedor12:hover{cursor:no-drop;}
+.contenedor13:hover{cursor:n-resize;}
+.contenedor14:hover{cursor:e-resize;}
+.contenedor15:hover{cursor:ne-resize;}
+.contenedor16:hover{cursor:nw-resize;}
+.contenedor17:hover{cursor:col-resize;}
+.contenedor18:hover{cursor:row-resize;}
+.contenedor19:hover{cursor:zoom-in;}
+.contenedor20:hover{cursor:zoom-out;}

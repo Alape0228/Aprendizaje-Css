@@ -1,0 +1,26 @@
+/* 
+    Flex box
+        * Requiere un flex container y un flex item 
+        * Se comportara como un display block
+        * Los cambios se notaran dentro del contenedor o en los elementos internos
+        * Maneja eje "x" = cross axis, Vertical (cross-start)(Comienzo)(cross-end)(Final) (izquierda a derecha)
+        * Maneja eje "y" = main axis , Horizontal (main-start)(Comienzo)(main-end)(Final) (arriba a abajo)
+        * la propiedad de flex item solo la toman los hijos directos los nietos no
+
+*/ 
+
+.contenedor1{
+    display: flex;
+}
+.contenedor1_flex{
+    background-color: #48e;
+    padding: 20px;
+    margin: 10px;
+}
+/* 
+    *   Sus contenedores hijos que adquieren la propiedad flex item se acomodan automaticamente
+    *   los contenedores hijos se acomodan automaticamente del tamaño del contenedor padre
+    *   los contenedores hijos se intentan adaptar al 100% del ancho de la pagina, a menos de que no 
+        requiera ocupar el 100%
+    
+*/

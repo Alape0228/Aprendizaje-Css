@@ -1,0 +1,121 @@
+/* 
+    Border-radius:
+        Es la propiedad que nos permite redondear vertices de forma independiente
+
+        border-top-left-radius  : Radio del borde Superior izquierdo
+        border-top-right-radius : Radio del borde Superior Derecho
+        border-bottom-right-radius  : Radio del borde Inferior Derecho
+        border-bottom-left-radius  : Radio del borde Inferior izquierdo    
+
+    Si solo recibe un valor dibujara un circulo en cada vertice del radio que especifiquemos
+
+    border-radius: 50px;    : Circulo de 50px de radio
+
+*/
+
+*{
+    box-sizing: border-box;
+}
+/* 
+    Si se recomienda usar el selector universal para aplicar la propiedad de border box;
+*/
+
+body{
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+}
+.bloque{
+    background-color: purple;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+}
+.bloque{
+    background-color: purple;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 150px;
+    border-bottom-left-radius: 200px;
+}
+.bloque{
+    background-color: purple;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px 100px 150px 200px;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.bloque2{
+    background-color: greenyellow;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    /* border-top-left-radius: 50px 100px; */
+
+    
+
+}
+.bloque2{
+    background-color: greenyellow;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    border-radius: 50px 100px;
+    /* Con lo anterior no hicimos un radio circular si no un vertice pero solo a un lado como lo explicado anteriormente en la parte superior izquierda */
+    
+}
+
+
+
+/* 
+    Si utilizamos el border-radius como shorthand hay diferentes entre si queremos dar un valor a cada lado (circulo) o dos (elipse)
+
+    Si se requere elipse se debe colocar "/"
+
+    1 Valor:
+        border-radius: 50px;                
+            Circulo de 50px a cada vertice
+
+    2 Valor
+        border-radius: 50px 100px;
+            50px en el superior izquierdo y en el inferior derecho
+            100px en el superior derecho y en el inferior izquierdo
+
+    3 Valor:
+        border-radius: 50px 100px 200px;
+            50px en el superior izquierdo 
+            100 px en el superior derecho y en el inferior izquierdo 
+            200 px  en el inferior derecho 
+
+    4 Valor:
+        border-radius: 50px 100px 200px 300px;
+            50px en el superior izquierdo 
+            100px en el superior derecho 
+            200px en el inferior izquierdo 
+            300px en el inferior derecho                                
+*/
+
+.bloque3{
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    border-radius: 50px 200px / 100px 300px;
+    /* Con lo anterior no hicimos un radio circular si no un vertice pero con distintos valores en todos los lados como lo explicado anteriormente*/
+    
+}

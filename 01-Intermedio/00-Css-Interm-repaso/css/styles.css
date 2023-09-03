@@ -1,0 +1,103 @@
+/* 
+  Selectores:
+    Atributos:
+      Se puede crear como el ejemplo del index y se seleccionan
+      entre []
+
+    Hijos:
+      Solo se aplica el estilo al hijo de derecha a izquierda todos los elementos p que esten dentro del elemento h2 lo otros elementos p no se les aplica el estilo
+
+    pseudoclases
+
+    especificidad:
+      hover:
+        Para cuando el puntero del mouse se pare encima del texto se aplique el estilo seleccionado
+      
+      first-child:
+        Sirve para seleccionar el primer elemento de los hermanos
+
+  Medidas Relativas:
+    em:
+      tiene por defecto medir 16px. Sin embargo lo interesante de esta medida es que se debe tener en cuenta el tamaño del contenedor, ya que si el contenedor mide 20px 1em equivaldria o mediria 20px asi que se debe tener muy en cuenta el tamaño del contenedor por que asi mismo se aplicara en em a los hijos (solo sirve para medida de tamaños fuentes de letras)
+      lo toma a partir de fontzice, 
+
+  tamaño entre lineas
+    line-height: 2
+      1/2 del tamaño de la letra hacia arriba
+      1/2 del tamaño de la letra hacia abajo
+
+  Estilos para texto
+    font-weight: ;
+      Grosor de las letras
+
+  box-sizing: border-box;
+    Sirve para administrar mejor el espacio con los paddings para que el tamaño especifico de height y width se mantenga a pesar del padding
+
+  display: inline;
+    para convertir elementos bloque en linea o viseversa
+  
+  box-shadow: ; Caja - Sombra
+    * eje x
+    * eje y
+    * tamaño del desenfoque o tamaño de la sombra
+    * tamaño del borde normalmente 0
+    *color
+    * Para duplicar el efecto dar "," y copiar y pegar box-shadow: 2px 2px 2px 0 white, 2px 2px 2px 0 white;
+      
+  text-shadow: ; texto - Sombra
+    * eje x
+    * eje y
+    * tamaño del desenfoque o tamaño de la sombra
+    *color
+    * Para duplicar el efecto dar "," y copiar y pegar text-shadow: 2px 2px 2px white, 2px 2px 2px white;
+  
+    Funciones:
+      transform: rotate(90deg);
+        Sirve para rotar un elemento "deg" es como grados en este ejemplo se roto 90 grados
+
+*/
+
+
+[davidAlape = "Hola"]{
+  color: red;
+}
+
+h2 p {
+  color: blue;
+  
+}
+
+p:first-child{
+  color: yellow;
+}
+
+.contenedor{
+  background-color: red;
+  width: 200px;
+  height: 200px;
+}
+
+.titulo2{
+  /* font-size: 1em; */
+  width: 400px;
+}
+
+.contenedor1{
+  font-size: 100px; /*Fuente del contenedor   */
+  background-color: blueviolet;
+  width: 400px;
+  height: 400px;
+  border: 10px solid black;
+}
+
+.contenedor2{
+  background-color: rgb(63, 158, 175);
+  width: 2em;
+  height: 3em;
+  /* font-size: 0.5em; */
+  /* border: 1em solid black; */
+}
+
+
+
+/* Para cuando el puntero del mouse se pare encima del texto se aplique el estilo seleccionado */

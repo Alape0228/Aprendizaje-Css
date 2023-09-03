@@ -1,0 +1,146 @@
+/* 
+    Align-Items;
+    *   Sirve cuando hay una linea de items solo "1"
+    *   Los efectos no se ven realizados a menos de que el contenedor padre no tenga un alto declarado y con mas espacio que los contenedores o items hijos esto debido a que la posicion en la que se alinearan sera entre el espacio del contenedor padre
+
+        align-items: center;
+            *   Centra el contenido de sus hijos elementos o sub cajas en la mitad de lo alto pero hacia el costado inicia izquierdo 
+
+        align-items: flex-end;
+            *   Envia el contenido o elementos hijos a la parte final inferior del alto del contenedor        
+
+        align-items: stretch;
+            *   Propiedad por Defecto
+            *   Sin Height se ajusta al contenedor padre   
+
+        align-items: flex-start;
+            *   envia los contenedores hijos o elementos hijos en la parte inicial o superior
+            *   Sin Height es que se ajusta al contenido del contenedor hijo  
+
+        align-items: baseline;
+        *   Donde mas se usa la propiedad es junto con la propiedad flex-wrap:wrap-reverse;
+        *   El contenido se va a la parte inferior como un end, sin embargo sus elementos contenedores al hacer responsive van hacia arriba
+
+
+    align-content:
+    *   Sirve cuando hay mas de una linea de items para ver un efecto mas comodo en responsive
+    *   Los efectos no se ven realizados a menos de que el contenedor padre no tenga un alto declarado y con mas espacio que los contenedores o items hijos esto debido a que la posicion en la que se alinearan sera entre el espacio del contenedor padre   
+    *   Se pueden poner las mismas propieades anteriores
+
+    
+
+*/
+.container{
+    text-align: center;
+}
+
+/* //////////////////////////////// align-items: center; //////////////////////////////// */
+.contenedor1{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    height: 400px;
+    border: 3px solid lightslategray;
+}
+.contenedor1_flex{
+    height: 100px;
+    width: 100px;
+    margin:5px;
+    background-color: darkseagreen;
+    outline: solid 2px black;
+}
+.contenedor1_flex1{background-color: orange;}
+.contenedor1_flex6{background-color: violet;}
+
+
+/* //////////////////////////////// align-items: flex-end; //////////////////////////////// */
+.contenedor2{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: flex-end;
+    height: 400px;
+    border: 3px solid lightslategray;
+}
+.contenedor2_flex{
+    height: 100px;
+    width: 100px;
+    margin:5px;
+    background-color: darkseagreen;
+    outline: solid 2px black;
+}
+.contenedor2_flex1{background-color: orange;}
+.contenedor2_flex6{background-color: violet;}
+
+
+/* //////////////////////////////// align-items: flex-start; //////////////////////////////// */
+.contenedor3{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: flex-start;
+    height: 400px;
+    border: 3px solid lightslategray;
+}
+.contenedor3_flex{
+    width: 100px;
+    margin:5px;
+    background-color: darkseagreen;
+    outline: solid 2px black;
+}
+.contenedor3_flex1{background-color: orange;}
+.contenedor3_flex6{background-color: violet;}
+
+
+/* //////////////////////////////// align-items: stretch; //////////////////////////////// */
+.contenedor4{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: stretch;
+    height: 400px;
+    border: 3px solid lightslategray;
+}
+.contenedor4_flex{
+    width: 100px;
+    margin:5px;
+    background-color: darkseagreen;
+    outline: solid 2px black;
+}
+.contenedor4_flex1{background-color: orange;}
+.contenedor4_flex6{background-color: violet;}
+
+
+/* //////////////////////////////// align-items: baseline; //////////////////////////////// */
+.contenedor5{
+    display: flex;
+    flex-wrap:wrap-reverse;
+    align-items: baseline;
+    height: 400px;
+    border: 3px solid lightslategray;
+}
+.contenedor5_flex{
+    height: 100px;
+    width: 100px;
+    margin:5px;
+    background-color: darkseagreen;
+    outline: solid 2px black;
+}
+.contenedor5_flex1{background-color: orange;}
+.contenedor5_flex6{background-color: violet;}
+
+
+/* //////////////////////////////// align-items: baseline; //////////////////////////////// */
+.contenedor6{
+    display: flex;
+    flex-wrap:wrap;
+    align-content: center;
+    height: 400px;
+    border: 3px solid lightslategray;
+}
+.contenedor6_flex{
+    height: 100px;
+    width: 100px;
+    margin:5px;
+    background-color: darkseagreen;
+    outline: solid 2px black;
+}
+.contenedor6_flex1{background-color: orange;}
+.contenedor6_flex6{background-color: violet;}

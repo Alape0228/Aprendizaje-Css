@@ -1,0 +1,60 @@
+/* 
+Propiedades de Flex-Wrap;
+
+    flex-wrap:
+        flex-wrap: wrap;
+            Respeta el ancho del contenedor padre sin embargo los elementos o cajas hijos se acomodaran de tal manera que cuando el espacio sea mas pequeño se retiren hacia abajo 
+
+        flex-wrap: wrap-reverse;
+            Realiza exactamente la misma funcion anterior solo que los elementos en ves de ir en cascada hacia abajo, van hacia arriba
+
+        flex-flow: column wrap;
+            Eto sirve para abreviar flex-Direction y flex-Wrap se suministra ambas propiedades en una
+        
+*/
+.container{
+    text-align: center;
+}
+
+/* //////////////////////////////// flex-direction: row; //////////////////////////////// */
+.contenedor1{
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid lightslategray;
+}
+.contenedor1_flex{
+    height: 100px;
+    width: 150px;
+    margin: 10px;
+    background-color: darkseagreen;
+    border-top: 5px solid black;
+    border-left: 5px solid green;
+    border-right: 5px solid green;
+    border-bottom: 5px solid black;
+}
+.contenedor1_flex1{background-color: orange;}
+.contenedor1_flex6{background-color: violet;}
+/* 
+    Se aplican las siguientes propiedades al contenedor padre para que este a su ves afecte a los hijos
+*/
+
+
+/* //////////////////////////////// flex-direction: row-reverse; //////////////////////////////// */
+.contenedor2{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    border: 3px solid lightslategray;
+}
+.contenedor2_flex{
+    height: 100px;
+    width: 150px;
+    margin: 10px;
+    background-color: darkseagreen;
+    border-top: 5px solid black;
+    border-left: 5px solid green;
+    border-right: 5px solid green;
+    border-bottom: 5px solid black;
+}
+.contenedor2_flex1{background-color: orange;}
+.contenedor2_flex6{background-color: violet;}
+

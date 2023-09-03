@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>1- (Hijos) align-self: center,flex-end,flex-start,stretch,baseline;</h2>
+    <h3>Alineando las cajas hijos del contenedor de manera vertical</h3>
+    <div class="contenedor1">
+        <div class="contenedor1_flex contenedor1_flex1 container">Caja Flexible</div>
+        <div class="contenedor1_flex contenedor1_flex2 container">Caja Flexible</div>
+        <div class="contenedor1_flex contenedor1_flex3 container">Caja Flexible</div>
+        <div class="contenedor1_flex contenedor1_flex4 container">Caja Flexible</div>
+        <div class="contenedor1_flex contenedor1_flex5 container">Caja Flexible</div>
+        <div class="contenedor1_flex contenedor1_flex6 container">Caja Flexible</div>
+    </div>
+
+    <h2>2- (Hijos) margin: auto;</h2>
+    <h3>con un solo elemento hijo se puede aplicar esta propiedad para centrar objetos de manera mas sencilla</h3>
+    <div class="contenedor2">
+        <div class="contenedor2_flex contenedor2_flex1 container">Caja Flexible</div>
+    </div>
+
+    <h2>3- (Hijos) flex-grow: 1;</h2>
+    <h3>Sirve para que los hijos primero y ultimo ocupen el espacio dispoble del contenedor</h3>
+    <h3>Recordar que la ultima caja tiene flex-grow: 2; mientras que la primera caja flex-grow: 1 con un total de 3, eso quiere decir que el espacio disponible se divide en 3 y la ultima caja tomara 2 de la 3 partes que hay </h3>
+    <div class="contenedor3">
+        <div class="contenedor3_flex contenedor3_flex1 container">Caja Flexible</div>
+        <div class="contenedor3_flex contenedor3_flex2 container">Caja Flexible</div>
+        <div class="contenedor3_flex contenedor3_flex3 container">Caja Flexible</div>
+        <div class="contenedor3_flex contenedor3_flex4 container">Caja Flexible</div>
+        <div class="contenedor3_flex contenedor3_flex5 container">Caja Flexible</div>
+        <div class="contenedor3_flex contenedor3_flex6 container">Caja Flexible</div>
+    </div>
+
+    <h2>4- (Hijos) flex-basis: 800px </h2>
+    <h3>Sirve como un width para declarar el ancho de un contenedor hijo</h3>
+    <div class="contenedor4">
+        <div class="contenedor4_flex contenedor4_flex1 container">Caja Flexible</div>
+        <div class="contenedor4_flex contenedor4_flex2 container">Caja Flexible</div>
+        <div class="contenedor4_flex contenedor4_flex3 container">Caja Flexible</div>
+        <div class="contenedor4_flex contenedor4_flex4 container">Caja Flexible</div>
+        <div class="contenedor4_flex contenedor4_flex5 container">Caja Flexible</div>
+        <div class="contenedor4_flex contenedor4_flex6 container">Caja Flexible</div>
+    </div>
+
+    <h2>5- (Hijos) flex-shrink: ; </h2>
+    <h3>Los contenedores hijos tienen declarado un ancho 200px para ocupar dicho espacio ellos, pero no tienen 200px por que necesitan espacio por lo cual ellos tienen que seder entregar o regalar cada uno 30px y quedan midiendo todas 170px y asi ocupar todo el espacio asi no ocupen el ancho declarado</h3>
+    <h3>si embargo al usar la propiedad flex-shrink: 2; y dejamos como valor un numero mayor a 1 en este caso le indicamos a esa caja que ella entregara 2 partes mas de lo que entregan o regalan los demas es por eso que ella ocuaparia 140px y las otras 170px mientras que las primeras entregaron 30px de espacio para acomodarse esta primera entre 2 veces con un total de entrega de 60px</h3>
+    <h3>Si se pone 0 se pondra la caja con su tamaño declarado de 200px indicando al sistema que el no va a seder regalar o entregar nada de espacio </h3>
+    <div class="contenedor5">
+        <div class="contenedor5_flex contenedor5_flex1 container">Caja Flexible</div>
+        <div class="contenedor5_flex contenedor5_flex2 container">Caja Flexible</div>
+        <div class="contenedor5_flex contenedor5_flex3 container">Caja Flexible</div>
+        <div class="contenedor5_flex contenedor5_flex4 container">Caja Flexible</div>
+        <div class="contenedor5_flex contenedor5_flex5 container">Caja Flexible</div>
+        <div class="contenedor5_flex contenedor5_flex6 container">Caja Flexible</div>
+    </div>
+
+    <h2>6- (Hijos) flex: (flex-grow, flex-shrink, flex-basis); order: 1; </h2>
+    <h3>Con order podemos ordenar los elementos para que vayan de izquierda a derecha en este caso le dimos como valor 1 y se posiciona al final esto es por que los otros elementos tienen por defecto el valor 0  </h3>
+    <div class="contenedor6">
+        <div class="contenedor6_flex contenedor6_flex1 container">Caja Flexible</div>
+        <div class="contenedor6_flex contenedor6_flex2 container">Caja Flexible</div>
+        <div class="contenedor6_flex contenedor6_flex3 container">Caja Flexible</div>
+        <div class="contenedor6_flex contenedor6_flex4 container">Caja Flexible</div>
+        <div class="contenedor6_flex contenedor6_flex5 container">Caja Flexible</div>
+        <div class="contenedor6_flex contenedor6_flex6 container">Caja Flexible</div>
+    </div>
+
+</body>
+</html>

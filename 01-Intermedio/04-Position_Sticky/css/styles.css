@@ -1,0 +1,23 @@
+/* 
+  position: 
+
+    static: 
+      No esta posicionado es como eliminar la propiedad position
+
+    sticky: 
+      Es como una combinacion de relative y fixed
+
+      conserva las propiedades como relative
+
+      Sirve para menus
+
+      sirve con medidas de altura mas no de ancho
+
+      Es una mezcla de position relative y fixed. Con ese tipo de posicionamiento los valores top, left, bottom y right no sirve para mover el elemento, si no para indicarle en que punto pasara a tener un comportamiento de posicionamiento fixed, hasta llegar a ese punto se comportara como si tuviera relative 
+    
+*/
+
+.caja-sticky{
+  position: sticky;
+  top: 100px;
+}

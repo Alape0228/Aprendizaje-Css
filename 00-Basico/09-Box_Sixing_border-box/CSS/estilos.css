@@ -1,0 +1,48 @@
+/* 
+    Box-Sixing:
+        Es la propiedad que nos permite controlar el calculo que hace el navegador a la hora de moficar las propiedades content, padding y border 
+
+    Los 2 Valores que podemos darle son
+        content box : Valor por defecto
+        border box  : Calculo de tamaño del elemento incluyendo el padding y el border
+
+*/
+
+*{
+    box-sizing: border-box;
+}
+/* 
+    Si se recomienda usar el selector universal para aplicar la propiedad de border box;
+*/
+
+body{
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+}
+.bloque{
+    background-color: purple;
+    width: 160px;
+    height: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+/* 
+    Si queremos que la caja mida realmente 200px teniendo en cuenta el padding se debe poner 160 esto debido que sumando los dos lados izquierda y derecha o superior inferior que son 40 daran un total de 200
+*/
+
+.bloque2{
+    background-color:orange;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border: 10px solid red;
+    box-sizing: border-box;
+}
+
+/* 
+    Con la opcion "box-sizing: border-box;" Forzamos al navegador que calcule automaticamente el ancho y la altura de 200, y lo deje automaticamente en 140 para que coincida con el padding de 20+20 y el borde de 10+10
+*/

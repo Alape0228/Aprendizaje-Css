@@ -1,0 +1,67 @@
+/* 
+    VIEWPORT
+        El viewport es el area util donde se mostrara la pagina web. IMPORTANTE tened en cuenta que es el area visible sin hacer scroll.
+
+        Podemos usar viewport como medida de varias formas:
+
+        vw      -> Viewport Width, hace referencia al ancho del Viewport. 
+        vh      -> Viewport Height hace referencia al alto del Viewport.
+        vmax    -> Utiliza el valor mas grande entre el ancho y el alto del Viewport.
+        vmin    -> Utiliza el valor mas pequeño entre el ancho y el alto del Viewport.
+
+        vw      = 1% Del ancho del viewport 
+        vh      = 1% Del Alto del viewport
+        vmax    = 1% Del Valor que sea mas pequeño del viewport
+        vmin    = 1% Del Valor que sea mas grande del viewport
+
+*/  
+
+/* 
+    En otras palabras el view port: es la visibilidad de la pagina si dejas un 100% de alto eso quiere decir que se visualizara el 100% de alto independiente del tamaño de la pantalla se ajustara y lo mostrara (se ajusta  tablets computadores y celulares) 
+*/
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #333;
+    color: lightcoral;
+    margin: 0;   
+}
+
+.cabecera{
+    background-color:aquamarine;
+    text-align: center;
+    height: 100vh;
+}
+
+/* Tener en cuenta que el toma en cuenta el tamaño y la visibilidad de la ventana entre mas grande la pantalla del navegador mas grande se hace el elemento que se ponga la propiedad hv */
+
+.titulo{
+    text-align: center;
+}
+
+.contenedor{
+    height: 350px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: yellowgreen;
+
+}
+.caja{
+    width: 100vmin;
+    height: 50%;
+}
+/* 
+    Mientras el ancho sea mas pequeño que el alto se aplicara la propiedad de mostrar siempre el 100% de la pantalla la visibilidad como tal 
+
+    Pero en cuanto el ancho se convierta mas grande que el alto parara de crecer
+*/
+
+.caja1{
+    position: sticky;
+    top: 0;
+    background-color:aqua;
+}
+

@@ -1,0 +1,104 @@
+/* 
+    Padding:
+        Es la propiedad que nos permite generar espacio interno entre el borde y la caja
+        Es un shorthond (propiedad abreviada) que controla los 4 lados posibles a los que dar padding 
+        Controla Los 4 lados posibles a los que dar padding
+
+    Padding: Interno a la caja
+    Margin : Externo a la caja
+
+    padding-top      : padding Superior
+    padding-right    : padding Derecha
+    padding-bottom   : padding Inferior
+    padding-left     : padding Izquierda
+
+    Admite hasta 4 valores que van en el orden de las agujas del reloj
+
+    4 valores   : padding: top right bottom left
+        le aplica margen indiferente a los 4 lados
+
+    3 Valores   : padding: top left/right bottom
+        le aplica margen diferente al top y al bottom// left y rigth compartirian el mismo lado
+
+    2 Valores   : padding: top/bottom left/right
+        le aplica la misma margen al top/bottom y una distinta a left/right 
+
+    1 Valor     : padding: top/right/bottom/left
+        le aplica la misma margen a todos los lados
+
+*/
+
+body{
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+}
+.cabecera{
+    background-color: red;
+    height: 50px;
+}
+.titulo{
+    width: 300px;
+}
+.bloque{
+    background-color: purple;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+.bloque2{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px 80px 60px 40px;
+
+}
+
+.linea{
+    background-color: lightcoral;
+    color: inherit;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+/* 
+    A diferencia de margin no hay limitaciones con los elementos de linea tambien se pueden aplicar
+    Si el objetivo es separar la caja de los elementos que le rodean se debe usar margin
+    Si el objetivo es aumentar el tamaño de la caja y separar los bordes del contenido usar padding
+*/
+
+.CajaBoton{
+    background-color: aqua;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.boton{
+    margin-left: 150px;
+    padding: 25px 50px;
+}
+
+
+
+
+/* 
+    Existen Margenes automaticas
+
+    margin-right: auto;
+        Lo que hace es que calcula toda la margen de la derecha y lo somete todo a la izquierda
+    margin-left: auto;
+        Lo que hace es que calcula toda la margen de la izquierda y lo somete todo a la derecha
+    margin-right: auto;
+        Lo que hace es que calcula toda la margen de la derecha y lo somete todo a la izquierda
+    margin-right: auto;
+        Lo que hace es que calcula toda la margen de la derecha y lo somete todo a la izquierda
+
+
+*/

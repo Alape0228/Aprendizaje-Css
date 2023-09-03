@@ -1,0 +1,55 @@
+body{
+  background: #223;
+  color: #999;
+}
+
+.caja{
+  margin: 10px;
+  height: 400px;
+  width: 600px;
+}
+
+.caja1 {
+  background: radial-gradient(ellipse,blue,black,red,yellow);
+}
+
+.caja2 {
+  background: radial-gradient(circle,blue,black,red,yellow);
+}
+
+.caja3 {
+  background: radial-gradient(ellipse 150px 100px, blue,black);
+}
+
+.caja4 {
+  background: radial-gradient(circle 150px,red,black);
+}
+
+.caja5 {
+  background: radial-gradient(ellipse 150px 100px at 50% 90%, blue,black);
+}
+
+.caja6 {
+  background: radial-gradient(
+    ellipse 150px 100px at 60% 40%, 
+    blue 50% 50%,
+    #fff 50% 50%,
+    #000 50% 50%  
+    );
+}
+
+.caja7 {
+  background: repeating-radial-gradient(
+    ellipse 400px 400px at 60% 40%, 
+    red 0 10%,
+    darkred 20% 25%,
+    #000 30% 30%
+    );
+}
+
+/* 
+  1 Valor = sirve como un efecto de estilo sombra entre mayor sea el porcentaje mas sombra tendra y mas se sobreprondra 
+
+  2 Valor = debe ser superior al valor anterior para sobre pasar y notase ejmplo
+  darkred (15% 25%,) #000(50% 26%) el segundo valor del negro (26) debe ser mayor al dark red (25)
+*/

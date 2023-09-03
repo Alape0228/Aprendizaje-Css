@@ -1,0 +1,41 @@
+/* 
+    Herencia    :Es la capacidad que tiene algunos elementos de 
+                heredar algunas propiedades de sus elementos 
+                contenedores (padres, abuelos, etc)
+*/
+/* 
+    background-color: red;
+        Le da color al fondo de la etiqueta o texto
+    color: red;
+        Le da color al texto
+    font-size: 10px;
+        Le da tamaño especifico al texto
+*/
+body {
+    background-color: aquamarine;
+}
+
+
+.titulo{
+    color: red;
+    font-size: 10px;
+}
+.texto{
+    color:chartreuse;
+}
+.link{
+    color: inherit;
+}
+/* con el atributo inherit forzamos que se tome en cuenta la herencia de su padre  */
+
+.lista {
+    color: red;
+}
+
+.lista-item-nose {
+    color: initial;
+}
+
+/* Vuelve a tu estado inicial, ignorando lo que heredas del padre para que se quede su estilo por defecto*/
+
+/* Revisar en la consola de comandos Elements -> Styles  o computed*/ 

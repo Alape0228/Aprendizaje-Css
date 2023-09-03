@@ -1,0 +1,39 @@
+/* 
+    % ->
+        Cuando usamos porcentaje usamos la referencia al tamaño del contenedor y el navegador calcula ese porcentaje. Esto no ocurre cuando usamos transform.
+        
+    auto ->
+        Cuando usamos auto le pedimos al navegador que calcule en funcion del espacio disponible 
+*/
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    
+}
+.contenedor{
+    background-color: aqua;
+    width: auto;
+    height: 400px;
+    margin: 0 150px;
+}
+
+/* 
+    Si por alguna razon se debe colocar tambien margin en el contenedor poner la propiedad width:auto para que el navegador calcule el espacio que queda disponible para ocupar
+*/
+
+.caja1{
+    background-color: blueviolet;
+    width: auto;
+    height: 25%;
+    margin-left: 150px;
+}
+
+/* 
+    Con margin left : 50px le indicamos que se corra la caja 50px hacia la derecha pero para que no se salga del contenedor se pone width: auto para que el calcule automaticamente el tamaño del ancho y no se salga
+*/

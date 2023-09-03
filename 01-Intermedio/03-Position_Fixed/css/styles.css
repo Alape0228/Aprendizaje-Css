@@ -1,0 +1,13 @@
+/* 
+  position: 
+
+    fixed: 
+      Sirve mas que todo para menus, Publicidades
+
+      El elemento perdera sus medidas y su espacio reservado. si lo movemos usara el elemento html de referencia y ademas se quedara fijo en esa posicion aunque hagamos scroll. 
+    
+*/
+
+.caja-fixed{
+  position: fixed;
+}

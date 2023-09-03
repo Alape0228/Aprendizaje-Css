@@ -1,0 +1,37 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+/* Mala Practica */
+
+body{
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+}
+/* Con el margin 0 estamos quitando toda margen que cuente la pagina por defecto */
+
+.cabecera{
+    background-color: red;
+    height: 50px;
+}
+/* 
+    Recordar que la pagina ya viene por defecto con una margen
+*/
+
+.titulo{
+    width: 300px;
+}
+
+.bloque{
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    /* como se quiere tomar solo margen en 3 distintas areas se recomiensa usar el codigo anterior */
+    /* margin: 0 auto; */
+    /* margin: 0 auto; Centra todo el bloque // al poner margenes en los 4 lados  */
+    /* pero si solo se necesita tocar 1 - 2 o 3 margenes no usarla */
+}

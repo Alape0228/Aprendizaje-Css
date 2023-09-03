@@ -1,0 +1,99 @@
+/* 
+    Border:
+        Es la propiedad que nos permite modificar el borde la caja
+        es un shorthand (propiedad abreviada) que agrupa 3 propiedades
+
+    border-width    : Ancho del borde
+        border-top-width    : Ancho de la parte superior del borde
+        border-right-width  : Ancho de la Derecha del borde
+        border-bottom-width : Ancho de la parte inferior del borde
+        border-left-width   : Ancho de la Izquierda del borde
+    
+    border-Color    : Color del borde3
+        border-top-Color    : Color de la parte superior del borde
+        border-right-Color  : Color de la Derecha del borde
+        border-bottom-Color : Color de la parte inferior del borde
+        border-left-Color   : Color de la Izquierda del borde
+
+    border-Style    : Estilo del borde
+        border-top-Style    : Estilo de la parte superior del borde
+        border-right-Style  : Estilo de la Derecha del borde
+        border-bottom-Style : Estilo de la parte inferior del borde
+        border-left-Style   : Estilo de la Izquierda del borde
+
+        Listado de Valores para Style:
+            none    : Sirve para quitar los bordes Completamente
+            hidden  : Sirve para quitar los bordes Completamente
+            dotted  : Borde hecho con puntos
+            dashed  : Borde hecho con Lineas
+            solid   : borde normal
+            double  : Borde hecho con 2 lineas 
+            groove  : Sirve como sombra interna 3D 
+            ridge   : Borde hecho como sombra externa 3D
+            inset   : sirve como un marco con sombra izquierda superior
+            outset  : sirve como un marco con sombre derecha inferior
+
+*/
+
+body{
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+}
+.cabecera{
+    background-color: red;
+    height: 50px;
+}
+.titulo{
+    width: 300px;
+}
+.bloque{
+    background-color: purple;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+.bloque2{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px 80px 60px 40px;
+
+}
+
+.linea{
+    background-color: lightcoral;
+    color: inherit;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+/* 
+    A diferencia de margin no hay limitaciones con los elementos de linea tambien se pueden aplicar
+    Si el objetivo es separar la caja de los elementos que le rodean se debe usar margin
+    Si el objetivo es aumentar el tamaño de la caja y separar los bordes del contenido usar padding
+*/
+
+.CajaBoton{
+    background-color: aqua;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.boton{
+    margin-left: 150px;
+    padding: 25px 50px;
+    border: 20px solid red;
+    /* 
+        border-width: 20px;
+        border-style: solid;
+        border-color: red;
+    */
+}

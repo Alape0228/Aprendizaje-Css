@@ -1,0 +1,174 @@
+/* 
+  Object-Fit: Fil
+
+    Contain
+    Cover
+    None
+    Scale-Down
+*/
+
+.contenedor1{
+  background-color: lightblue;
+  margin: 25px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+}
+.imagen1{
+  width: 100%;
+  height: 100%;
+  border: 3px solid red;
+  object-fit:contain;
+}
+/* 
+  Contain
+    La Resolucion de la imagen se intenta ampliar para ajustarse al contenedor y se acomoda al centro del contenedor
+    Si al ajustar la resolucion de imagen da como resultado sobrar espacio para no perder resolucion
+    hara que sobre espacio
+*/
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.contenedor2{
+  background-color: lightblue;
+  margin: 25px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+}
+.imagen2{
+  width: 100%;
+  height: 100%;
+  border: 3px solid red;
+  object-fit:cover;
+}
+/* 
+  cover
+    Hace que la resolucion de la imagen se ajusten al contenido
+    Esto quiere decir que si es necesario que la imagen realice algunos cortes para que se ajuste a su contenido lo hara  
+*/
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.contenedor3{
+  background-color: lightblue;
+  margin: 25px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+}
+.imagen3{
+  width: 100%;
+  height: 100%;
+  border: 3px solid red;
+  object-fit:none;
+}
+/* 
+  none
+    Mantiene exactamente la resolucion de la imagen
+    si su contenedor es mas grande al tamaño de la imagen esta se ajusta al centro y no se expande
+    si su contenedor es mas pequeño la imagen se recortara
+*/
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.contenedor4{
+  background-color: lightblue;
+  margin: 25px;
+  width: 300px;
+  height: 300px;
+}
+.imagen4{
+  width: 100%;
+  height: 100%;
+  border: 3px solid red;
+  object-fit:scale-down;
+}
+/* 
+  scale-down
+    Con la propiedad scale-down el sistema elige la propiedad que mejor convenga si none o contain
+    se queda con la resolucion mas pequeña
+*/
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.contenedor5{
+  background-color: lightblue;
+  margin: 25px;
+  width: 500px;
+  height: 300px;
+}
+.imagen5{
+  width: 100%;
+  height: 100%;
+  border: 3px solid red;
+  object-fit:contain;
+  object-position: left;
+}
+/* 
+  object-position: left
+    En casos que la imagen se desee que ocupe o tome el espacio de la izquierda del contenedor
+    tambien sirven con pixeles
+*/
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.contenedor6{
+  background-color: lightblue;
+  margin: 25px;
+  width: 300px;
+  height: 300px;
+}
+.imagen6{
+  width: 100%;
+  height: 100%;
+  border: 3px solid red;
+  object-fit:contain;
+  object-position: top;
+}
+/* 
+  object-position: left
+    En casos que la imagen se desee que ocupe o tome el espacio de arriba del contenedor
+*/
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.contenedor7{
+  background-color: lightblue;
+  margin: 25px;
+  width: 300px;
+  height: 300px;
+}
+.imagen7{
+  width: 100%;
+  height: 100%;
+  border: 3px solid red;
+  object-fit:cover;
+  object-position: right;
+}
+/* 
+  object-position: right
+    En casos que la imagen se desee que ocupe o tome el espacio de arriba del contenedor
+*/
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.contenedor8{
+  background-color: lightblue;
+  margin: 25px;
+  width: 300px;
+  height: 300px;
+}
+.imagen8{
+  width: 100%;
+  height: 100%;
+  border: 3px solid red;
+  object-fit:none;
+  object-position: left;
+  object-position: bottom;
+}
+/* 
+  object-position: bottom
+    En casos que la imagen se desee que ocupe o tome el espacio inferior del contenedor
+    Tener en cuenta que no se puede aplicar mas de dos posiciones solo se tomara una
+*/

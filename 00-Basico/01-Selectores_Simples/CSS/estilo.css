@@ -1,0 +1,80 @@
+/* 
+    Selector        : El elemento al que vamos aplicar estilos
+    Propiedad       : Lo que vamos a cambiar
+    Valor           : El nuevo valor que le vamos a dar a la propiedad
+    Propiedad:Valor : Se le denomina declaracion al conjunto de 
+    conjunto de selector {propiedad:valor;} Se le denomina regla
+    ;               : representa separacion entre una propiedad valor a otra
+
+selector{
+    propiedad:valor;
+    pripiedad2:valor;
+    pripiedadN:valor;
+} 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    1-Selectores Simples 
+        1.1-Selectores elementales
+            1.1.1-Selector Universal          : *
+            1.1.2-Selector de tipo o etiqueta : Nombre de la etiqueta
+        1.2-Selectores de atributo
+            1.2.1-id      : id del elemento se llama en css con "#" no se recomienda usar
+            1.2.2-Clase   : La Clase del elemento se llama en css con "."
+            1.2.3-Otros atributos
+                -[atributo]
+                -[atributo=Valor]
+                -[atributo^=Valor]
+                -[atributo*=Valor]
+                -[atributo$=Valor]
+
+    2- Selectores Compuestos
+        2.1-Selectores agrupados
+        2.2-selectores combinadores
+        2.3-pseudoclases - pseudoelementos
+*/
+
+
+    *{
+        background-color: gray;
+    } 
+/*  "*"   : Selecciona adsolutamente todo el codigo de la pagina */
+
+ h1{
+    background-color: white;
+} 
+
+#titulo{
+    background-color: blueviolet;
+}
+
+.titulo2{
+    background-color: chartreuse;
+}
+
+/* El atributo se llama con "[]" */
+[href]{
+    background-color:orange;
+}
+[href="https://www.google.com/"]{
+    background-color: chocolate;
+}
+
+/* Recordar que los estilos estan por debajo predominan por encima de los que estan arriba */
+
+[href^="color"]{
+    background-color: red;
+}
+
+/* 
+    -[atributo^=Valor]  = Para comprobar si el atributo empieza por ese valor En este caso "color"
+    Eso quiere decir que si el valor del atributo empieza con el valor "color" se ejecutara el codigo 
+*/
+[href*="ejemplo"]{
+    background-color: green;
+}
+/* 
+    -[atributo*=Valor]  = Para comprobar si el atributo contiene el valor En este caso "ejemplo"
+    Eso quiere decir que si el valor del atributo contiene en alguna parte de su codigo la palabra ejemplo se ejecuta el codigo
+*/
+[href$="azul"]{
+    background-color:blue;
+}

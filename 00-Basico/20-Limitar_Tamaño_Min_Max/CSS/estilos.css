@@ -1,0 +1,84 @@
+/* 
+    Limitadores al ancho y alto 
+
+    Cuando establecemos un width y/o un height con una medida que es relativa, es posible que no queramos que se respete esa medida en todos los casos
+    Para ello tenemos propiedades que limitan esas medidas::after
+
+        min-width:  Inidica el ancho minimo que puede alcanzar el elemento 
+        max-width:  Inidica el ancho maximo que puede alcanzar el elemento 
+        min-height: Inidica el alto minimo que puede alcanzar el elemento 
+        max-height: Inidica el alto Maximo que puede alcanzar el elemento 
+
+*/  
+
+/* 
+    En otras palabras el view port: es la visibilidad de la pagina si dejas un 100% de alto eso quiere decir que se visualizara el 100% de alto independiente del tamaño de la pantalla se ajustara y lo mostrara (se ajusta  tablets computadores y celulares) 
+*/
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #333;
+    color: lightcoral;
+    margin: 0;   
+    position: relative;
+    border: 5px solid black;
+    min-height: 100vh;
+}
+
+.cabecera{
+    background-color:aquamarine;
+    text-align: center;
+}
+
+/* Tener en cuenta que el toma en cuenta el tamaño y la visibilidad de la ventana entre mas grande la pantalla del navegador mas grande se hace el elemento que se ponga la propiedad hv */
+
+.titulo{
+    text-align: center;
+}
+
+p{
+    margin: 0;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1000px;
+    min-width: 600px;
+    height: 60vh;
+    background-color: chocolate;
+    max-height: 300px;
+    min-height: 100px;
+
+}
+
+/* 
+    max-width: Significa que el elemento puede ancharse hasta el limite declarado teniendo en cuenta que se debe usar un width de 100%
+    min-width: Significa que el elemento puede encojerse hasta el limite declarado teniendo en cuenta que se debe usar un width de 100% en el momento que se encoja demasiado lo que hara es que sacara un scroll en la parte inferior 
+
+    Con el height funciona exactamente igual pero se refleja debido a que se declara un alto determinado de 60% en el viewport Responsive para que se visualice el 60% de la pagina donde se extendera y se encongera solo teniendo en cuenta el max y el min
+
+    una solucion facil es en el body declarar la propiedad 
+    min-height: 100vh;
+
+*/
+
+.ejemplo{
+    text-align: center;
+    background-color:aqua;
+    height: 10vh;
+    color: black;
+    padding: 20px 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;    
+}
+
+/* 
+    Recordar que el position:adsolute nos permite mover el elemento donde se desee dentro de todo el html por que no cuenta con contenedor y el botton 0 para que se posicione en la parte inferior
+
+    Pero recordar que para que esto funcione se requiere que el contenedor tambien contenga el la propiedad position:
+
+    pero si hay mucho texto y se requiere scroll
+*/

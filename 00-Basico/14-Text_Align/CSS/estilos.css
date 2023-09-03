@@ -1,0 +1,72 @@
+/* 
+    Text-align:
+    Es la propiedad que nos permite alinear horizontalmente el contenido de un elemento de bloque siempre que el contenido NO TENGA ANCHO DECLARADO
+
+    Acepta 4 posibles Valores
+        text-align:left;    Alinea el contenido a la izquierda
+        text-align:right;   Alinea el contenido a la derecha
+        text-align:center;  Alinea el contenido al centro
+        text-align:Justify; Alinea el contenido de forma justificada. No es recomendado usarlo.
+
+*/
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #333;
+    color: #fff;
+}
+
+.texto{
+    /* text-align: left;
+    El contenido viene por defecto alineado a la izquierda */
+    text-align:justify;
+    
+}
+
+.caja{
+    background-color: #666;
+    width: 150px;
+    padding: 10px 0;
+    /* 10px en la parte superior e inferior y 0px en la parte izquierda y derecha */
+    margin: 20px 0;
+    /* 20px en la parte superior e inferior y 0px en la parte izquierda y derecha */
+    border: 2px solid red;
+    text-align: center;
+}
+/* text-aling:center; Centra el contenido del elemento no el elemento como tal */
+
+.link{
+    color: white;
+    display: block;
+    text-align: center;
+    background-color:chocolate;
+}
+/* 
+    Como el elemento <a> es una etiqueta de linea no se puede centrar asi que se debe forzar en convertir en un elemento de bloque
+    NO FUNCIONA CON "DISPLAY:INLINE-BLOCK" 
+*/
+
+.img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+}
+
+/* 
+    Como el elemento <img> es una etiqueta de linea no se puede centrar asi que se debe forzar en convertir en un elemento de bloque
+    pero el text-align no funciona por que sirve para centrar el contenido y la imagen como tal no es el contenido es el elemento por lo cual se debe usar margin:left;auto 
+*/
+
+.contenedor{
+    text-align: center;
+}
+.img2{
+    width: 600px;
+}
+
+/* 
+    esta es una segunda manera de centrar imagenes pero dentro de un contenedor debido a que estamos centrando lo que hay dentro de la imagen 
+*/

@@ -1,0 +1,105 @@
+/* 
+    absolute:
+      El elemento perdera sus medidas y su espacio reservado. si lo movemos usara el elemento padre posicionado como referencia. si no tiene ninguno, usara el elemento html de referencia.
+
+      Se Conserva la posicion pero el espacio que antes ocupaba ahora ya no le pertenece
+      
+      Funciona siempre y cuando su contenedor tenga declarado una posicion 
+      position: absolute; position: relative; etc static no por que es como si no tuviese
+      
+      Si no se declara una posicion en el contenedor va tomar como referencia todo el html
+    
+*/
+
+*{
+  position:sticky;
+}
+
+.caja{
+  height: 100px;
+  width: 100px;
+}
+
+.caja1{ 
+  background-color: lightblue;
+}
+
+.caja2{
+  background-color: lightgreen;
+  
+}
+
+.caja3{
+  background-color: lightcoral;
+  position: absolute;
+  top: 0;
+  left: 70px;
+}
+
+/* 
+  absolute:
+    * Se Conserva la posicion pero el espacio que antes ocupaba ahora ya no le pertenece y es ocupado por el elemento proximo
+    * El elemento con absolute no desaparece pero si se ve por debajo de los demas elementos
+    * Si al elemento le establecemos propiedades "top,left,right,bottom" se va mostrar y se va interponer por encima de los demas elementos 
+    * Las propiedades que se alojen "top,left,right,bottom" no se tendran en cuenta desde su posicion si no desde el contenedor o el html 
+*/
+
+.caja4{
+  background-color: lightseagreen;
+}
+
+.caja5{
+  background-color: lightslategray;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.caja00{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+}
+.contenedor{
+  background-color: aqua;
+  height: 500px;
+  width: 500px;
+  position: relative;
+  margin: 50px auto;
+}
+
+.caja10{ 
+  background-color: lightblue;
+  top: 0;
+  left: 0;
+}
+
+.caja20{
+  background-color: lightgreen;
+  bottom: 0;
+  left: 0;
+}
+
+.caja30{
+  background-color: lightcoral;
+  top: 0;
+  right: 0;
+}
+
+.caja40{
+  background-color: lightseagreen;
+  bottom: 0;
+  right: 0;
+}
+
+.caja50{
+  background-color: lightslategray;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* para centrar un div automaticamente */

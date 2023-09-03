@@ -1,0 +1,26 @@
+/* 
+    Fuentes desde un servidor remoto, son fuentes que se encuentran en un servidor y que nosotros descarguemos para su uso, la mas famosa es Google Fonts
+    
+    Siempre que ulicemos fuentes no genericas, debemos poner fuentes genericas de fallback (respaldo) 
+*/  
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #333;
+    color: white;
+    font-family:'Alkatra', sans-serif;
+
+}
+
+.material-symbols-outlined {
+    font-size: 100px;
+    color: red;
+}
+
+
+/* 
+
+*/

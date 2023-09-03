@@ -1,0 +1,103 @@
+/* 
+Propiedades de Flex-Direction;
+    Se aplican las siguientes propiedades al contenedor padre para que este a su ves afecte a los hijos
+
+    flex-direction;
+        flex-direction: row;
+            Valor que cuenta por defecto (el contenido que hay dentro del contenedor va trabajar o comportarse como una fila horizontal apuntando de izquierda a derecha)
+        
+        flex-direction:row-reverse;
+            Su contenido funciona de alguna manera como si fuese un espejo, las cajas internas se comportaran de derecha a izquierda de forma horizontal
+
+        flex-direction:column;
+            El contenido que hay dentro del contenedor va trabajar o comportarse como una columna Vertical apuntando de arriba a abajo
+        
+        flex-direction:column-reverse;
+            Su contenido funciona de alguna manera como si fuese un espejo, las cajas internas se comportaran de abajo a arriba de forma vertical
+        
+*/
+.container{
+    text-align: center;
+}
+
+/* //////////////////////////////// flex-direction: row; //////////////////////////////// */
+.contenedor1{
+    display: flex;
+    flex-direction:row;
+    border: 3px solid lightslategray;
+}
+.contenedor1_flex{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background-color: darkseagreen;
+    border-top: 5px solid black;
+    border-left: 5px solid green;
+    border-right: 5px solid green;
+    border-bottom: 5px solid black;
+}
+.contenedor1_flex1{background-color: orange;}
+.contenedor1_flex6{background-color: violet;}
+
+
+/* //////////////////////////////// flex-direction: row-reverse; //////////////////////////////// */
+.contenedor2{
+    display: flex;
+    flex-direction:row-reverse;
+    border: 3px solid lightslategray;
+}
+.contenedor2_flex{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background-color: darkseagreen;
+    border-top: 5px solid black;
+    border-left: 5px solid green;
+    border-right: 5px solid green;
+    border-bottom: 5px solid black;
+}
+.contenedor2_flex1{background-color: orange;}
+.contenedor2_flex6{background-color: violet;}
+
+
+/* //////////////////////////////// flex-direction: column; //////////////////////////////// */
+.contenedor3{
+    display: flex;
+    flex-direction:column;
+    border: 3px solid lightslategray;
+}
+.contenedor3_flex{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background-color: darkseagreen;
+    border-top: 5px solid black;
+    border-left: 5px solid green;
+    border-right: 5px solid green;
+    border-bottom: 5px solid black;
+}
+.contenedor3_flex1{background-color: orange;}
+.contenedor3_flex6{background-color: violet;}
+
+
+/* //////////////////////////////// flex-direction: row; //////////////////////////////// */
+.contenedor4{
+    display: flex;
+    flex-direction:column-reverse;
+    border: 3px solid lightslategray;
+}
+.contenedor4_flex{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background-color: darkseagreen;
+    border-top: 5px solid black;
+    border-left: 5px solid green;
+    border-right: 5px solid green;
+    border-bottom: 5px solid black;
+}
+.contenedor4_flex1{background-color: orange;}
+.contenedor4_flex6{background-color: violet;}
+
+
+/* //////////////////////////////// flex-direction: row; //////////////////////////////// */
