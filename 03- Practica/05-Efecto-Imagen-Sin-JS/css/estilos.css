@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    height: 300vh;
+}
+/* 
+    1- margin: 0;
+        Importante quitar las margenes para que se vea mejor el estilo del background-image
+    2- font-family: sans-serif;
+        Estilo de letra clasico
+    1- height: 300vh;
+        No es necesario solo se uso en este caso para ver como quedaba el efecto forzando la creacion de un scroll
+*/
+
+
+.section{
+    height: 70vh;
+    background: linear-gradient(#3300319a, #0d043db3), url(https://images.pexels.com/photos/3184464/pexels-photo-3184464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: grid;
+    align-content:center ;
+}
+/* 
+1-  height: 70vh;
+        Queremos que el efecto de la imagen solo ocupe un 70% de la pantalla 
+2-  background: linear-gradient(#3300319a, #0d043db3), url("url de la imagen")
+        usamos un shorthub con el fin de poner un efecto de dos colores compitiendo del fondo y una imagen que debe tener un tamaño proporcionalmente grande
+3-  background-size: cover;
+        asi como el objet-fit, esta propiedad es util para que la imagen no pierda resoluciones y de ciertamanera se ajuste al contenedor que es el section
+4-  background-position: center;
+        posicionamos la imagen lo mas centrada posible 
+5-  background-attachment: fixed;
+        Esta es la propiedad mas importante, ya que con este estilo le imagen se queda estatica y los elementos no solo se posicionan por encima si no tambien con el efecto del scroll se va ocultando
+*/
+
+
+.section .titulo{
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    margin: 0;
+}
+/* 
+    *   Aqui solo modificamos los estilos del titulo para que tenga un tamaño mayor de color blanco y sin margen para no dañar los efectos de la imagen
+    *   Centramos el titulo desde el contenedor con display grid y justify-content
+*/
+
+
+.nav {
+    background-color: #000;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    position: sticky;
+    top: 0;
+}
+/* 
+    * Se da un tipo de color de fondo, y lo importante es la propiedad display flex
+    * para usar propiedades como align-items: center; justify-content: center; y los links se posicionen de manera totalmente centrada
+    * Con gap separamos los link
+    * y la propiedad mas importante para dar este efecto en el nav es el position: sticky; con el fin de que este elemento se sobre ponga para toda la pagina y nunca desaparezca
+    * Top 0 simplemente para que se quede fija siempre en la parte superior 
+*/
+
+
+.nav_link{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+
+

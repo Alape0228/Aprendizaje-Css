@@ -1,0 +1,85 @@
+body{
+  margin: 0;
+  background-color: lightcoral;
+}
+
+.container{
+  flex-wrap: wrap;
+}
+
+h1{
+  margin: 0;
+  font-size: 60px;
+}
+
+
+
+
+
+
+.titulo01{font-family: 'Tilt Prism', cursive;}
+.titulo02{font-family: 'Dancing Script', cursive;}
+.titulo03{font-family: 'Pacifico', cursive;}
+.titulo04{font-family: 'Gloria Hallelujah', cursive;}
+.titulo05{font-family: 'Press Start 2P', cursive;}
+.titulo06{font-family: 'Monoton', cursive;}
+.titulo07{font-family: 'Cabin Sketch', cursive;}
+.titulo08{font-family: 'Bungee Inline', cursive;}
+.titulo09{font-family: 'Rubik Moonrocks', cursive;}
+.titulo10{font-family: 'Rye', cursive;}
+.titulo11{font-family: 'Love Ya Like A Sister', cursive;}
+.titulo12{font-family: 'Bungee Shade', cursive;}
+.titulo13{font-family: 'DotGothic16', sans-serif;}
+.titulo14{font-family: 'Codystar', cursive;}
+.titulo15{font-family: 'Faster One', cursive;}
+.titulo16{font-family: 'Neonderthaw', cursive;}
+.titulo17{font-family: 'Rubik Dirt', cursive;}
+.titulo18{font-family: 'Frijole', cursive;}
+.titulo19{font-family: 'Libre Barcode 39 Text', cursive;}
+.titulo20{font-family: 'Rubik 80s Fade', cursive;}
+.titulo21{font-family: 'Rubik Vinyl', cursive;}
+.titulo22{font-family: 'Rubik Spray Paint', cursive;}
+.titulo23{font-family: 'Rubik Gemstones', cursive;}
+.titulo24{font-family: 'Rubik Storm', cursive;}
+.titulo25{font-family: 'Kenia', cursive;}
+.titulo26{font-family: 'Sonsie One', cursive;}
+.titulo27{font-family: 'Londrina Shadow', cursive;}
+.titulo28{font-family: 'Londrina Outline', cursive;}
+.titulo29{font-family: 'Akronim', cursive;}
+.titulo30{font-family: 'Sancreek', cursive;}
+.titulo31{font-family: 'Fascinate Inline', cursive;}
+.titulo32{font-family: 'Monofett', monospace;}
+.titulo33{font-family: 'Molle', cursive;}
+.titulo34{font-family: 'Train One', cursive;}
+.titulo35{font-family: 'Black And White Picture', sans-serif;}
+.titulo36{font-family: 'Nosifer', cursive;}
+.titulo37{font-family: 'Caesar Dressing', cursive;}
+.titulo38{font-family: 'Birthstone Bounce', cursive;}
+.titulo39{font-family: 'Ribeye Marrow', cursive;}
+.titulo40{font-family: 'Arbutus', cursive;}
+.titulo41{font-family: 'Hanalei Fill', cursive;}
+.titulo42{font-family: 'Rubik Wet Paint', cursive;}
+.titulo43{font-family: 'Ewert', cursive;}
+.titulo44{font-family: 'Zen Tokyo Zoo', cursive;}
+.titulo45{font-family: 'Astloch', cursive;}
+.titulo46{font-family: 'Bungee Outline', cursive;}
+.titulo47{font-family: 'Kumar One Outline', cursive;}
+.titulo48{font-family: 'Rubik Distressed', cursive;}
+.titulo49{font-family: 'Snowburst One', cursive;}
+.titulo50{font-family: 'Rubik Marker Hatch', cursive;}
+.titulo51{font-family: 'Rubik Maze', cursive;}
+.titulo52{font-family: 'Rubik Burned', cursive;}
+.titulo53{font-family: 'Geostar Fill', cursive;}
+.titulo54{font-family: 'Londrina Sketch', cursive;}
+.titulo55{font-family: 'Hanalei', cursive;}
+.titulo56{font-family: 'Fruktur', cursive;}
+.titulo57{font-family: 'Butcherman', cursive;}
+.titulo58{font-family: 'Rubik Glitch', cursive;}
+.titulo59{font-family: 'Rubik Beastly', cursive;}
+.titulo60{font-family: 'Big Shoulders Inline Text', cursive;}
+.titulo61{font-family: 'Miltonian', cursive;}
+.titulo62{font-family: 'Tourney', cursive;}
+.titulo63{font-family: 'Blaka Hollow', cursive;}
+.titulo64{font-family: 'Rubik Microbe', cursive;}
+.titulo65{font-family: 'Blaka Ink', cursive;}
+.titulo66{font-family: 'Moo Lah Lah', cursive;}

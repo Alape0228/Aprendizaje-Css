@@ -1,0 +1,109 @@
+/*
+Colores
+    Background: #333
+
+    Tarjetas
+        Orange: hsl(31, 77%, 52%)
+        Cyan: hsl(184, 100%, 22%)
+        Dark cyan: hsl(179, 100%, 13%)
+    
+    Texto
+        Blanco al 0.75 de opacidad
+
+Fuentes de la página
+    Títulos
+        https://fonts.google.com/specimen/Big+Shoulders+Display
+        Estilo 600
+    Textos
+        https://fonts.google.com/specimen/Lexend+Deca
+        Estilo 400
+*/
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+  }
+
+.contenedor{
+    width: 90%;
+    height: 450px;
+    margin: 100px auto;
+    font-size: 0;
+  }
+
+.tarjeta{
+    height: 100%;
+    width: 300px;
+    padding: 35px;
+    display: inline-block;
+    text-align: left;
+    font-size: 16px;
+    position: relative;
+  }
+
+.tarjeta1{
+    background-color: hsl(31, 77%, 52%);
+}  
+
+.tarjeta2{
+    background-color: hsl(184, 100%, 22%);
+  }
+
+.tarjeta3{
+    background-color: hsl(179, 100%, 13%);
+  }
+
+.titulo{
+    font-family: 'Big Shoulders Display', cursive;
+}
+.texto{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+.acceso{
+    text-decoration: none;
+    padding: 10px 50px;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 40px;
+}
+.acceso1{
+    color: hsl(31, 77%, 52%);
+}
+.acceso2{
+    color: hsl(184, 100%, 22%);
+}
+.acceso3{
+    color: hsl(179, 100%, 13%);
+}
+
+/* 
+    en el html solo basta copiar y pegar el link que arroja la pagina web de las fuentes
+
+    text-decoration: none;
+        Sirve para quitar el subrayado de los links
+
+    display: inline-block;
+        Para acomodar cajas o tarjetas (div) de manera automatica no siempre se usa la propiedad position:absolute, en este caso despues de declarar un ancho y un alto a cada tarjeta y usa la propiedad display: inline-block; los div dejaran de comportarse como elementos de linea ocupando todo el ancho a ser elementos de bloque y se podran acomodar uno al lado de otro
+
+    font-size: 0;
+        Como en esta ocacion no se esta usando flex-box ni position, y si se esta usando display: inline-block;
+        genera un pequeño espacio entre cada tarjeta o div 
+        si se usa font-size: 0; es un truco para eliminar ese espacio entre tarjetas o divs
+        pero se puede eliminar el tamaño de fuente de la letra pero se puede solucionar si se especifica el tamaño de la letra 16px en cada tarjeta si es necesario
+
+    usando el display: inline-block; como ya no es un elemento de linea se puede centrar teniendo en cuenta el
+    text-align-center teniendo en cuenta que se pone en el body para que su contenido se centrara 
+
+    El resposive se aplica al contenedor mas no a las tarjetas individuales
+    el contenedor puede equivalor 90% del ancho pero las tarjetas miden individualmente 300px
+*/
+
+
+

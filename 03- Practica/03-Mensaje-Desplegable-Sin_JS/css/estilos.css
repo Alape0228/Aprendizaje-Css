@@ -1,0 +1,53 @@
+.articulo{
+    background-color: #bbb;
+    width: 40%;
+    padding: 24px;
+    border-left: 5px solid darkslateblue;
+    border-radius: 10px;
+    box-shadow: 0 0 20px -3px #bbb;
+    margin: 50px auto;
+}
+
+.articulo_input{
+    display: none;
+}
+
+.articulo_link{
+    color: darkslateblue;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.articulo_item{
+    display: grid;
+    grid-template-rows: var(--variable, 0fr);
+    transition: 1s grid-template-rows;
+}
+
+.articulo_texto{
+    overflow: hidden;
+}
+
+.articulo:has(:checked){
+    --variable:1fr;
+}
+
+
+/* 
+
+    :is()
+    :where()
+    :has()
+
+Funcionamiento:
+    1- Se debe esconder el input para mejor estilo con display: none;
+    2- Se debe esconder el texto con overflow: hidden; 
+    3- Como el input hace parte del label al seleccionar el titulo automaticamente seleccionara el input
+    4- lo que a su ves seleccionara el input y quedara checked
+    5- al contenedor como tal le vamos a dar la propiedad de display: grid; por lo que se debe definir las columnas o filas (en este caso la fila)
+    6- al definir la fila se debe pasar por parametro como cantidad de filas y tamaño que esta tendra
+    7- se pasa por parametro una variable y 0fr de tamaño
+    8- si algo del contenido llamenlo div container o en este caso articulo esta checked o seleccionado en este caso el label se creara una variable que contenga 1fr
+    9- asi que al momento de dar click al label este quedara cheked creara una variable que contendra 1fr que este a su ves medira la columna y de esta manera lo mostrara
+
+*/

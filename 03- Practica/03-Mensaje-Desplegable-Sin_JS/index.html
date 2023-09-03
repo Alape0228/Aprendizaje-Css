@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Funcionamiento:</h2>
+    <h4>1- Se debe esconder el input para mejor estilo con display: none;</h4>
+    <h4>2- Se debe esconder el texto con overflow: hidden;</h4> 
+    <h4>3- Como el input hace parte del label al seleccionar el titulo automaticamente seleccionara el input
+    <h4>4- lo que a su ves seleccionara el input y quedara checked</h4>
+    <h4>5- al contenedor como tal le vamos a dar la propiedad de display: grid; por lo que se debe definir las columnas o filas (en este caso la fila)</h4>
+    <h4>6- al definir la fila se debe pasar por parametro como cantidad de filas y tamaño que esta tendra</h4>
+    <h4>7- se pasa por parametro una variable y 0fr de tamaño</h4>
+    <h4>8- si algo del contenido llamenlo div container o en este caso articulo esta checked o seleccionado en este caso el label se creara una variable que contenga 1fr</h4>
+    <h4>9- asi que al momento de dar click al label este quedara cheked creara una variable que contendra 1fr que este a su ves medira la columna y de esta manera lo mostrara</h4>
+
+    <article class="articulo">
+        <label class="articulo_link">
+            Da Click para Abrir
+            <input class="articulo_input" type="checkbox">
+        </label>
+
+        <div class="articulo_item">
+            <p class="articulo_texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam hic id laborum, modi, rem cumque aliquam perspiciatis officiis porro magnam quidem? Reiciendis, velit nisi. Nostrum tempora commodi soluta ad incidunt?
+            Quod quo saepe quae incidunt, provident similique, sit dicta odio unde alias molestias exercitationem! Accusamus quibusdam amet minima perspiciatis commodi architecto ex officia eius nam porro. Quidem voluptatibus dolor eveniet!</p>
+        </div>
+
+    </article>
+</body>
+</html>
